@@ -33,6 +33,29 @@ config.js, and then include our MongoDB Atlas uri.
 -   if it still doesn't work, do it a few more times, it's super tedious but
     eventually it worked for me.
 
+## Changes in File Strucutre that Lina Made:
+
+### CSS -> SCSS
+
+-   Instead of CSS I thought SCSS ("Sass: Syntactically Awesome Style Sheets")
+    would be a nice alternative. It's basically the same thing as CSS using the
+    same syntax and everything except it's more convenient for styling nested
+    elements/classes/IDs.
+-   It's a personal preference, I'm personally glad I learned enough of it.
+
+#### Example:
+
+-   let's say you have a div with a class of .home, and you have another div
+    inside of that called .thing. you want to style specifically the .thing divs
+    inside of .home divs.
+-   css styling of that looks like:
+    `.home { attribute: value; } .home .thing { attribute: value; }`
+-   but scss styling would look like:
+    `.home { attribute: value; .thing { attribute: value; }}`
+-   with just two classes to deal with it doesn't seem like a very big
+    difference but it'll just be more convenient if we end up with many nested
+    html elements with different classes.
+
 ## File structure
 
 #### `client` - Holds the client application
