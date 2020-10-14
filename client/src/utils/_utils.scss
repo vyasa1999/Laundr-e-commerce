@@ -1,6 +1,9 @@
 // store variables in this file, like colors/other globals AKA "utilities" AKA "utils" lol
 
+// bootstrap and semantic ui CDNs included in public/index.html
+
 // declaring variables: https://sass-lang.com/documentation/variables
+// From Product Info doc
 // $<variableName>: <expression>
 $watermelon-cucumber: #ff5656;
 $white-gardenia: #f4ea9c;
@@ -8,3 +11,12 @@ $mahogany-teakwood: #5b5b5b;
 $fresh-air: #8dcfdd;
 $coffee-vanilla: #e2cea3;
 $eucalyptus: #48c47e;
+
+// From Laundr Style Guide doc
+$laundr-blue: #01c9e1;
+$laundr-yellow: #ffb600;
+$laundr-red: #ff5a39;
+$laundr-white: #f9f9f9;
+$laundr-gray: #676767;
+// also included #FFFFFF and #000000 for white and black, respectively, but since those are the actual
+// hex codes for white and black, you can just use white/black where appropriate

@@ -1,3 +1,23 @@
+// start of JJSAP header utilities
+@import "../../utils/utils";
+
+.header {
+	background-color: $laundr-blue;
+	button {
+		align-self: end;
+	}
+}
+.topnav {
+	display: inline-block;
+	width: 75%;
+}
+.topnav-right {
+	display: inline-block;
+	// justify-self: end;
+	// align-self: center;
+}
+
+// start of template utilities
 #wrapper {
 	display: grid;
 	max-width: 1000px;
