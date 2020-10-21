@@ -4,8 +4,8 @@ import './ProductDescription.scss';
 import Icon from "@mdi/react"
 import {mdiCartOutline} from "@mdi/js"
 
-// Test the push
-// Yes this is the new push
+// Test the git version track
+
 const ProductDescription = () => {
 
     const AddToCart = () => {
