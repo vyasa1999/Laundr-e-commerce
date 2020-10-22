@@ -1,8 +1,12 @@
 import React from 'react';
 import { Route, Switch, Redirect  } from 'react-router-dom';
+
+// components
+import Header from "./components/Header/Header"
+
+// pages aka "views"
 import Home from "./views/Home/Home"
 import NotFound from "./views/NotFound"
-import Header from "./components/Header/Header"
 
 
 const App = () => {
