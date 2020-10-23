@@ -9,4 +9,4 @@ const productSchema = new mongoose.Schema({
     search: [String],
 });
 
-module.export = mongoose.model('productList', productSchema);
+module.exports = mongoose.model('productList', productSchema);

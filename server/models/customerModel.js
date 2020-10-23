@@ -9,4 +9,4 @@ const customerSchema = new mongoose.Schema({
     favorites: [String],
 });
 
-module.export = mongoose.model('customerInfo', customerSchema);
+module.exports = mongoose.model('customerInfo', customerSchema);

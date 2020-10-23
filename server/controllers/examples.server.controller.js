@@ -3,17 +3,20 @@ const productList = require('../models/productModel.js'),
 
 exports.createProduct = async function(req, res) {
     const newProduct = req.body;
+    
     if (!newProduct){
-        return res.status(200).send({
-            error: "newProduct not found",
+        return res.send({
+           error: "newProduct not found",
           });
     }
-    await new newProduct(productList).save()
+    await new productList(newProduct).save()
     .then((data) => {
       res.json(data);
     })
     .catch((err) => {
-      res.status(200).send(err);
+      res.send(err);
     });
     res.send('world')
+    
+   //res.send(req.body)
 };
