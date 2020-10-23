@@ -3,16 +3,20 @@ const examples = require('../controllers/examples.server.controller.js'),
     router = express.Router()
 var Product = require("../models/productModel")
 
-router.post('/', examples.createProduct);
+//router.post('/', examples.createProduct);
 
-router.post('/:name/:description/:stock/:price/:search', function(req, res) {
-    // req.params.variable
-    // Product.create({
-    //     name: name
-    // })
+router.post('/:name/:description/:stock/:price', function(req, res) {
+    name = req.params.name;
+    description = req.params.description;
+    stock = req.params.stock;
+    price = req.params.price;
     var newProduct = new Product({
-    // set attributes to req.params.attributes
-    })
+        name: name,
+        description: description,
+        stock: stock,
+        price: price,
+        
+    });
 
     Product.create(newProduct, function(err) {
         if(err) {
@@ -20,7 +24,7 @@ router.post('/:name/:description/:stock/:price/:search', function(req, res) {
         } else {
             res.send("product creation success")
         }
-    }) // i think this is all that goes into creating a mongoose object but check the mongoose docs if something is wrong
+    }); // i think this is all that goes into creating a mongoose object but check the mongoose docs if something is wrong
 
 })
   

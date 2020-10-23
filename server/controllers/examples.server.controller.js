@@ -18,5 +18,6 @@ exports.createProduct = async function(req, res) {
     });
     res.send('world')
     
-   //res.send(req.body)
+   res.send('hello world')
+
 };
