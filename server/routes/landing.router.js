@@ -1,9 +1,9 @@
-const examples = require('../controllers/examples.server.controller.js'),
+const productController = require('../controllers/products.controller.js'),
     express = require('express'), 
     router = express.Router()
-var Product = require("../models/productModel")
+var Product = require("../models/product.model")
 
-//router.post('/', examples.createProduct);
+//router.post('/', productController.createProduct);
 
 router.post('/:name/:description/:stock/:price', function(req, res) {
     name = req.params.name;

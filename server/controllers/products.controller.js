@@ -1,5 +1,4 @@
-const productList = require('../models/productModel.js'),
-    customerInfo = require('../models/customerModel.js');
+const productList = require('../models/product.model.js');
 
 exports.createProduct = async function(req, res) {
     const newProduct = req.body;

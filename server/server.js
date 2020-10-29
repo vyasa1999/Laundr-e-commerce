@@ -1,7 +1,8 @@
 const express = require('./config/express.js')
-const router = require('./routes/examples.server.routes.js')
+const LandingRouter = require('./routes/landing.router.js')
+const ProductsRouter = require('./routes/products.router.js')
 const config = require('./config/config.js')
-const {connectToDatabase} = require('./database/connectMongodb.js')
+const {connectToDatabase} = require('./config/connectMongodb.js')
 const bodyParser = require('body-parser')
  
 
@@ -21,7 +22,14 @@ const app = express.init()
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.use(bodyParser.json());
-app.use('/api', router);
-app.listen(port, () => console.log(`Server now running on port ${port}!`));
 
+app.use(bodyParser.json());
+
+app.use('/', LandingRouter);
+//app.use('/product', ProductsRouter);
+
+app.all('/*', (req, res) => {
+  res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('.client/public/index.html'))
+});
+
+app.listen(port, () => console.log(`Server now running on port ${port}!`));
