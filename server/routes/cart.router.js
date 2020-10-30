@@ -1,4 +1,4 @@
-const productController = require('../controllers/products.controller.js'),
+const productController = require('../controllers/cart.controller.js'),
     express = require('express'), 
     router = express.Router()
 var Product = require("../models/product.model")

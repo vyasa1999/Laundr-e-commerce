@@ -5,18 +5,6 @@ var Product = require("../models/product.model")
 
 //router.post('/', productController.createProduct);
 
-router.get('/coffee', );
-
-router.get('/eucalyptus', );
-
-router.get('/freshair', );
-
-router.get('/gardenia', );
-
-router.get('/mahogany', );
-
-router.get('/watermelon', );
-
 router.post('/:name/:description/:stock/:price', function(req, res) {
     name = req.params.name;
     description = req.params.description;

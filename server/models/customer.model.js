@@ -1,4 +1,4 @@
-// Importing mongoose
+//Not super necessary as of now, more for sprint 3
 const mongoose = require('mongoose');
 
 const customerSchema = new mongoose.Schema({

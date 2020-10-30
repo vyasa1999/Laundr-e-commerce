@@ -1,5 +1,5 @@
 const express = require('./config/express.js')
-const LandingRouter = require('./routes/landing.router.js')
+const CartRouter = require('./routes/cart.router.js')
 const ProductsRouter = require('./routes/products.router.js')
 const config = require('./config/config.js')
 const {connectToDatabase} = require('./config/connectMongodb.js')
@@ -25,8 +25,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-app.use('/', LandingRouter);
-//app.use('/product', ProductsRouter);
+app.use('/api/products', ProductsRouter);
+app.use('/', CartRouter);
 
 app.all('/*', (req, res) => {
   res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('.client/public/index.html'))
