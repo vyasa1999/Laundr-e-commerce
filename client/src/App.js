@@ -7,19 +7,24 @@ import Header from "./components/Header/Header"
 // pages aka "views"
 import Home from "./views/Home/Home"
 import NotFound from "./views/NotFound"
+import ProductOnScroll from "./views/ProductOnScroll/ProductOnScroll"
 
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Switch>
+      <Home/>
+      <ProductOnScroll/>
+{/* {      <Switch>
         <Route exact path="/Home" component={Home} />
-        <Route exact path="/">
+        <Route exact path="/" component={ProductOnScroll}>
           <Redirect to="/Home" />
         </Route>
         <Route component={NotFound}/>
-      </Switch>
+      </Switch>} */}
+
+      {/* <ProductOnScroll/> */}
     </div>
   );
 }

@@ -1,0 +1,89 @@
+@import "../../utils/utils";
+
+@keyframes backgroundScroll {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -180px 0px;
+	}
+}
+@-webkit-keyframes backgroundScroll {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -180px 0px;
+	}
+}
+.freshAir {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/freshair_pattern.png");
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/freshairMockup.png");
+		background-size: 85%;
+	}
+}
+.eucalyptus {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/eucalyptus_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/eucalyptusMockup.png");
+	}
+}
+.gardenia {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/gardenia_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/gardeniaMockup.png");
+	}
+}
+.mahogany {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/mahogany_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/mahoganymockup.png");
+	}
+}
+.watermelon {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/watermelon_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/watermelonMockup.png");
+	}
+}
+.vanilla {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/vanilla_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/coffeeMockup.png");
+	}
+}
+
+.pattern {
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
+	min-height: 100vh;
+	-webkit-animation: backgroundScroll 5s linear infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation: backgroundScroll 5s linear infinite;
+	animation-fill-mode: forwards;
+}
+.mockup {
+	background-size: 150%;
+	transform: rotate(90deg);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+}
+
+.productName {
+	margin-left: 5rem;
+	// padding-top: 20rem;
+}

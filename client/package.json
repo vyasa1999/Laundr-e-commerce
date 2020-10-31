@@ -6,6 +6,7 @@
     "@mdi/js": "^5.7.55",
     "@mdi/react": "^1.4.0",
     "bootstrap": "^4.5.3",
+    "fullpage.js": "^3.0.9",
     "node-sass": "^4.14.1",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
