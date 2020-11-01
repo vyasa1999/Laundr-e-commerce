@@ -45,20 +45,16 @@ function HomeFooter() {
 
                                         </div>
 
-                                        <div className="row">
-                                            <div className="col">
-                                                <i className="fas fa-map-marker ml-3"></i>
-                                                <span>What is address</span>
-                                            </div>
-
-                                        </div>
 
                                         <div className="row">
                                             <div className="col">
                                                 <i className="fas fa-envelope-open ml-3"></i>
-                                                <span>info@laudr.edu</span>
+                                                <span>support@laundr.io</span>
                                             </div>
                                         </div>
+
+
+
                                     </div>
                                 </div>
                             </div>
@@ -79,6 +75,21 @@ function HomeFooter() {
                     </div>
                 </div>
             </section>
+
+
+            <section className="container-fluid sec-sub-footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <span>A team project by JJSAP</span>
+                        </div>
+                        <div className="col text-left">
+                            <a href="https://www.google.com" className="f-light text-dark">Terms and Conditions </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
         </div>
 
