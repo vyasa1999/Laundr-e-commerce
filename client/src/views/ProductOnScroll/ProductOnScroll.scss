@@ -5,7 +5,7 @@
 		background-position: 0 0;
 	}
 	to {
-		background-position: -180px 0px;
+		background-position: -1000px 0px;
 	}
 }
 @-webkit-keyframes backgroundScroll {
@@ -13,7 +13,7 @@
 		background-position: 0 0;
 	}
 	to {
-		background-position: -180px 0px;
+		background-position: -1000px 0px;
 	}
 }
 .freshAir {
@@ -70,9 +70,9 @@
 	background-repeat: repeat;
 	background-position: center;
 	min-height: 100vh;
-	-webkit-animation: backgroundScroll 5s linear infinite;
+	-webkit-animation: backgroundScroll 30s linear infinite;
 	-webkit-animation-fill-mode: forwards;
-	animation: backgroundScroll 5s linear infinite;
+	animation: backgroundScroll 30s linear infinite;
 	animation-fill-mode: forwards;
 }
 .mockup {
