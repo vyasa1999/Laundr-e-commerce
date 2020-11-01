@@ -7,17 +7,8 @@ function HomeFooter() {
         <div>
             <head>
                 <link rel="stylesheet" href="HomeFooter.css"></link>
-                <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
-                      id="bootstrap-css"></link>
-                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"></link>
             </head>
-
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
-                  integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
-                  crossOrigin="anonymous">
-            </link>
-
 
             <section className="container-fluid sec-footer">
                 <div className="container">
@@ -32,6 +23,7 @@ function HomeFooter() {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col">
                             <div className="card desc-box">
                                 <div className="card-body">
@@ -52,7 +44,6 @@ function HomeFooter() {
                                                 <span>support@laundr.io</span>
                                             </div>
                                         </div>
-
 
 
                                     </div>

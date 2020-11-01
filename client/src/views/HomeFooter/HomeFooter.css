@@ -83,13 +83,13 @@
 .snip1472:hover,
 .snip1472:active,
 .snip1472.hover {
-    color: #c0392b;
+    color: #FF5A39;
 }
 
 .snip1472:hover:after,
 .snip1472:active:after,
 .snip1472.hover:after {
-    border-color: #c0392b transparent #c0392b transparent;
+    border-color: #FF5A39 transparent #FF5A39 transparent;
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
