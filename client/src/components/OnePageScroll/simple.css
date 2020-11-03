@@ -1,7 +1,7 @@
 .section {
     text-align: center;
-    color: #09d3ac;
-    font-size: 5em;
+    color: orangered;
+    font-size: 3em;
     z-index: 100;
 
 }
@@ -12,12 +12,45 @@
 
 
 #section1{
-    background-image: url(https://www.phys.ufl.edu/wp/wp-content/uploads/2017/11/photo4-1024x787-1.jpg);
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/coffeeMockup.png);
     background-size: cover;
-    padding: 30% 0 0 0;
+
 }
+
+
+
 #section2{
-    background-image: url(https://i.insider.com/5f5e5c4b7ed0ee001e25f040?width=1100&format=jpeg&auto=webp);
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/eucalyptusMockup.png);
     background-size: cover;
-    padding: 30% 0 0 0;
+}
+
+
+
+#section3{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/freshairMockup.png);
+    background-size: cover;
+}
+
+
+#section4{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/gardeniaMockup.png);
+    background-size: cover;
+}
+
+
+#section5{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/mahoganymockup.png);
+    background-size: cover;
+}
+
+
+#section6{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/watermelonMockup.png);
+    background-size: cover;
 }
