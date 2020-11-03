@@ -1,0 +1,23 @@
+.section {
+    text-align: center;
+    color: #09d3ac;
+    font-size: 5em;
+    z-index: 100;
+
+}
+
+.content {
+    margin: 50px
+}
+
+
+#section1{
+    background-image: url(https://www.phys.ufl.edu/wp/wp-content/uploads/2017/11/photo4-1024x787-1.jpg);
+    background-size: cover;
+    padding: 30% 0 0 0;
+}
+#section2{
+    background-image: url(https://i.insider.com/5f5e5c4b7ed0ee001e25f040?width=1100&format=jpeg&auto=webp);
+    background-size: cover;
+    padding: 30% 0 0 0;
+}

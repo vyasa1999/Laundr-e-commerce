@@ -7,7 +7,7 @@ function HomeFooter() {
         <div>
             <head>
                 <link rel="stylesheet" href="HomeFooter.css"></link>
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"></link>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"></link>
             </head>
 
             <section className="container-fluid sec-footer">
@@ -40,7 +40,7 @@ function HomeFooter() {
 
                                         <div className="row">
                                             <div className="col">
-                                                <i className="fas fa-envelope-open ml-3"></i>
+                                                <i className="fas fa-envelope ml-3"></i>
                                                 <span>support@laundr.io</span>
                                             </div>
                                         </div>
@@ -52,7 +52,10 @@ function HomeFooter() {
                         </div>
 
                         <div className="col text-center">
-                            <img alt="Whoops" src={logo}></img>
+                            <a id="logo-link" href="/">
+                            <img alt="laundr logo" src={logo}></img>
+                            </a>
+
                             <div className="clearfix">
                                 <a href="https://instagram.com/laundrofficial" className="snip1472">
                                     <i className="fab fa-instagram"></i></a>
@@ -72,10 +75,10 @@ function HomeFooter() {
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <span>A team project by JJSAP</span>
+                            <span>A team project by JJSAP-UF2020</span>
                         </div>
                         <div className="col text-left">
-                            <a href="https://www.google.com" className="f-light text-dark">Terms and Conditions </a>
+                            <a href="https://www.google.com" className="f-light text-dark">Terms of use </a>
                         </div>
                     </div>
                 </div>
