@@ -1,8 +1,21 @@
 .landing {
 	text-align: center;
 	background-image: url("https://media.giphy.com/media/xT5LMx6rCLspqzJ9Bu/giphy.gif");
+	background-color: black;
+	z-index: 10;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 100vh;
+	opacity: 0.85;
+	background: linear-gradient(rgba(0, 0, 0, 0.7));
+}
+
+.logo-overlay {
+	background-image: url("https://i.imgur.com/tgrjAjf.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	z-index: 1;
 }
