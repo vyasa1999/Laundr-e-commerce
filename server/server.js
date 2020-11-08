@@ -2,6 +2,7 @@ const express = require('./config/express.js');
 var session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 var path = require('path');
+const CartTester = require('./routes/cart.router.js')
 const CartRouter = require('./routes/cart.router.js');
 const ProductsRouter = require('./routes/products.router.js');
 const config = require('./config/config.js');
@@ -37,18 +38,18 @@ app.use(session({
 }));
 
 app.use(bodyParser.json());
-/*
-app.use(function(req,res){
-  res.locals.session = req.session;
-});
-*/
+
 app.use('/api/products', ProductsRouter);
 app.use('/api/cart', CartRouter);
+
+app.use('/tests/cart', CartTester);
+
 app.use('/home', (req,res) => {
   console.log(req.session);
   req.session.views++;
   res.send(`<h1>Home  ${req.session.views}</h1>`)
 });
+
 /*
 app.all('/*', (req, res) => {
   res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/public/index.html'))

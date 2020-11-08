@@ -22,10 +22,11 @@ router.post('/:name/:description/:stock/:price', function(req, res) {
         if(err) {
             throw err
         } else {
+            console.log(newProduct._id);
             res.send("product creation success")
         }
     }); // i think this is all that goes into creating a mongoose object but check the mongoose docs if something is wrong
 
 });
-  
+
 module.exports = router;
