@@ -4,16 +4,9 @@
 .freshAir {
 	// text-align: center;
 	background-image: url("../../../assets/laundr-assets/patterns/freshair_pattern.png");
+
 	.mockup {
 		background-image: url("../../../assets/laundr-assets/packaging/freshairMockup.png");
-		background-size: 85%;
 	}
 }
 
-.mockup {
-	background-size: 100%;
-	transform: rotate(90deg);
-	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 100vh;
-}
