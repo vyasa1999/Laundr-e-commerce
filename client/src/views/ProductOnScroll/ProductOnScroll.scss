@@ -28,7 +28,7 @@
 	animation-fill-mode: forwards;
 }
 .mockup {
-	background-size: 85%;
+	background-size: 30%;
 	transform: rotate(90deg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -38,4 +38,8 @@
 .productName {
 	margin-left: 5rem;
 	// padding-top: 20rem;
+}
+
+#footer{
+	height: 300px;
 }
