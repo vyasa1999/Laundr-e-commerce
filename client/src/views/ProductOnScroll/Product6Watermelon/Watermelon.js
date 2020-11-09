@@ -1,3 +1,4 @@
+import '../ProductOnScroll.scss'
 import './Watermelon.scss'
 import React from "react";
 

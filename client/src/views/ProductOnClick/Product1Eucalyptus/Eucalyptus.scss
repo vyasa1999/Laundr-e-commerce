@@ -1,4 +1,4 @@
-@import "../../utils/utils";
+@import "../../../utils/utils";
 
 @keyframes backgroundScroll {
 	from {
@@ -17,6 +17,15 @@
 	}
 }
 
+.eucalyptus {
+	// text-align: center;
+	background-image: url("../../../assets/laundr-assets/patterns/eucalyptus_pattern.png");
+
+	.mockup {
+		background-image: url("../../../assets/laundr-assets/packaging/eucalyptusMockup.png");
+	}
+}
+
 .pattern {
 	background-size: contain;
 	background-repeat: repeat;
@@ -28,7 +37,7 @@
 	animation-fill-mode: forwards;
 }
 .mockup {
-	background-size: 85%;
+	background-size: 100%;
 	transform: rotate(90deg);
 	background-repeat: no-repeat;
 	background-position: center;

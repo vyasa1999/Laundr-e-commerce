@@ -1,4 +1,4 @@
-@import "../../utils/utils";
+@import "../../../utils/utils";
 
 @keyframes backgroundScroll {
 	from {
@@ -8,12 +8,22 @@
 		background-position: -1000px 0px;
 	}
 }
+
 @-webkit-keyframes backgroundScroll {
 	from {
 		background-position: 0 0;
 	}
 	to {
 		background-position: -1000px 0px;
+	}
+}
+
+.vanilla {
+	// text-align: center;
+	background-image: url("../../../assets/laundr-assets/patterns/vanilla_pattern.png");
+
+	.mockup {
+		background-image: url("../../../assets/laundr-assets/packaging/coffeeMockup.png");
 	}
 }
 
@@ -27,8 +37,9 @@
 	animation: backgroundScroll 30s linear infinite;
 	animation-fill-mode: forwards;
 }
+
 .mockup {
-	background-size: 85%;
+	background-size: 100%;
 	transform: rotate(90deg);
 	background-repeat: no-repeat;
 	background-position: center;

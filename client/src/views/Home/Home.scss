@@ -1,6 +1,7 @@
 .landing {
 	text-align: center;
-	background-image: url("https://media.giphy.com/media/xT5LMx6rCLspqzJ9Bu/giphy.gif");
+	// background-image: url("https://media.giphy.com/media/xT5LMx6rCLspqzJ9Bu/giphy.gif");
+	background-image: url("../../assets/laundr-assets/patterns/freshair_pattern.png");
 	background-color: black;
 	z-index: 10;
 	background-size: cover;
@@ -9,6 +10,32 @@
 	min-height: 100vh;
 	opacity: 0.85;
 	background: linear-gradient(rgba(0, 0, 0, 0.7));
+
+	@keyframes backgroundScroll {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: -1000px 0px;
+		}
+	}
+	@-webkit-keyframes backgroundScroll {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: -1000px 0px;
+		}
+	}
+
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
+	min-height: 100vh;
+	-webkit-animation: backgroundScroll 30s linear infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation: backgroundScroll 30s linear infinite;
+	animation-fill-mode: forwards;
 }
 
 .logo-overlay {

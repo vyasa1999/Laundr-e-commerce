@@ -1,21 +1,5 @@
 @import "../../../utils/utils";
-
-@keyframes backgroundScroll {
-	from {
-		background-position: 0 0;
-	}
-	to {
-		background-position: -1000px 0px;
-	}
-}
-@-webkit-keyframes backgroundScroll {
-	from {
-		background-position: 0 0;
-	}
-	to {
-		background-position: -1000px 0px;
-	}
-}
+@import '../ProductOnScroll.scss';
 
 .eucalyptus {
 	// text-align: center;
@@ -24,27 +8,4 @@
 	.mockup {
 		background-image: url("../../../assets/laundr-assets/packaging/eucalyptusMockup.png");
 	}
-}
-
-.pattern {
-	background-size: contain;
-	background-repeat: repeat;
-	background-position: center;
-	min-height: 100vh;
-	-webkit-animation: backgroundScroll 30s linear infinite;
-	-webkit-animation-fill-mode: forwards;
-	animation: backgroundScroll 30s linear infinite;
-	animation-fill-mode: forwards;
-}
-.mockup {
-	background-size: 100%;
-	transform: rotate(90deg);
-	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 100vh;
-}
-
-.productName {
-	margin-left: 5rem;
-	// padding-top: 20rem;
 }

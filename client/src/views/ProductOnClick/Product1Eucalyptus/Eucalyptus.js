@@ -1,6 +1,8 @@
 import React from "react";
 import './Eucalyptus.scss'
 
+// intended to display when the product package is clicked
+
 
 export default () => {
     return (
@@ -14,7 +16,7 @@ export default () => {
                     </div>
                 </div>
                 <div className="col">
-                    <h1 className="display-1">$18.99</h1>
+                    <h1 className="display-1">PRICE STUFF HERE</h1>
                 </div>
             </div>
         </div>
