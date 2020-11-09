@@ -5,6 +5,7 @@
   "dependencies": {
     "@mdi/js": "^5.7.55",
     "@mdi/react": "^1.4.0",
+    "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "fullpage.js": "^3.0.9",
     "node-sass": "^4.14.1",

@@ -4,8 +4,17 @@ import './Header.scss';
 import laundrLogo from "../../assets/laundr-assets/laundr-logo.png";
 import Icon from "@mdi/react"
 import {mdiCartOutline} from "@mdi/js"
+import {Cart} from "../Cart/Cart"
+import CartButton from "../CartButton/CartButton"
 
 const Header = () => {
+    const handleAddToCart = () => {
+        if(document.getElementById('shopping-cart').classList.includes('cart-hidden')) {
+            document.getElementById('shopping-cart').classList.remove('cart-hidden')
+        } else {
+            document.getElementById('shopping-cart').classList.add('cart-hidden')
+        }
+    }
     return (
         <div className="navbar navbar-expand-lg navbar-light header">
             <div className='topnav '>
@@ -31,14 +40,14 @@ const Header = () => {
                         <Link className="topnav-link nav-link" to='/about'>Our Story</Link>
                     </li>
                 </ul>
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <Link className="topnav-link nav-link" to="/"><Icon path={mdiCartOutline} title="Shopping Cart" size={2} color="white"/></Link>
+                {/* <ul className="navbar-nav">
+                    <li className="nav-item shopping-cart">
+                        <Link className="topnav-link nav-link" onClick={handleAddToCart}><Icon path={mdiCartOutline} title="Shopping Cart" size={2} color="white"/></Link>
                     </li>
-                </ul>
-                {/* <a className="topnav-link" target='_blank' rel="noopener noreferrer" href="https://github.com/ufosc/club-resources">
+                </ul> */}
+                <a className="topnav-link" target='_blank' rel="noopener noreferrer" onClick={handleAddToCart}>
                     <i class="fas fa-shopping-cart"></i>
-                </a> */}
+                </a>
             </div>
         </div>
     )

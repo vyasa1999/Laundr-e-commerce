@@ -6,6 +6,7 @@
 	button {
 		align-self: end;
 	}
+	// height: 7vh;
 }
 .topnav {
 	display: inline-block;
@@ -15,6 +16,11 @@
 	display: inline-block;
 	// justify-self: end;
 	// align-self: center;
+}
+.topnav-logo {
+	height: 5vh;
+	padding-left: 1rem;
+	padding-top: 3px
 }
 
 // start of template utilities
