@@ -29,8 +29,6 @@ const App = () => {
 
             {/* <ProductOnScroll/> */}
 
-            <HomeFooter />
-
 
 
 

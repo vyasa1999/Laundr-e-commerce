@@ -45,7 +45,9 @@ export default class ProductOnScroll extends React.Component {
                     <Watermelon />
 
                 </ReactPageScroller>
+                <HomeFooter />
             </React.Fragment>
+
         );
     }
 }

@@ -5,7 +5,7 @@ import laundrLogo from "../../assets/laundr-assets/laundr-logo.png";
 import Icon from "@mdi/react"
 import {mdiCartOutline} from "@mdi/js"
 import {Cart} from "../Cart/Cart"
-import CartButton from "../CartButton/CartButton"
+// import CartButton from "../CartButton/CartButton"
 
 const Header = () => {
     const handleAddToCart = () => {

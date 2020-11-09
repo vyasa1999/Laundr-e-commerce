@@ -1,6 +1,9 @@
 import '../ProductOnScroll.scss'
 import './Watermelon.scss'
 import React from "react";
+import logo from "../../../assets/laundr-assets/laundr-logo.png";
+
+
 
 export default () => {
     return (
@@ -18,5 +21,7 @@ export default () => {
                 </div>
             </div>
         </div>
+
+
     );
 };

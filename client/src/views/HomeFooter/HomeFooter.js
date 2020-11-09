@@ -71,19 +71,6 @@ function HomeFooter() {
             </section>
 
 
-            <section className="container-fluid sec-sub-footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <span>A team project by JJSAP-UF2020</span>
-                        </div>
-                        <div className="col text-left">
-                            <a href="https://www.google.com" className="f-light text-dark">Terms of use </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
 
         </div>
 
