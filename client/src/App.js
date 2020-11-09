@@ -9,6 +9,8 @@ import Home from "./views/Home/Home"
 import NotFound from "./views/NotFound"
 import ProductOnScroll from "./views/ProductOnScroll/ProductOnScroll"
 import HomeFooter from "./views/HomeFooter/HomeFooter";
+import ReactPageScroller from "react-page-scroller";
+
 
 
 
@@ -16,9 +18,7 @@ const App = () => {
     return (
         <div>
             <Header/>
-            <Home/>
             <ProductOnScroll/>
-            <HomeFooter/>
             {/* {      <Switch>
         <Route exact path="/Home" component={Home} />
         <Route exact path="/" component={ProductOnScroll}>
@@ -27,9 +27,9 @@ const App = () => {
         <Route component={NotFound}/>
         </Switch>} */}
 
-        {/* <ProductOnScroll/> */}
+            {/* <ProductOnScroll/> */}
 
-
+            <HomeFooter />
 
 
 
