@@ -11,9 +11,6 @@ import ProductOnScroll from "./views/ProductOnScroll/ProductOnScroll"
 import HomeFooter from "./views/HomeFooter/HomeFooter";
 import ReactPageScroller from "react-page-scroller";
 
-
-
-
 const App = () => {
     return (
         <div>

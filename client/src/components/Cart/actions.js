@@ -5,7 +5,7 @@
  */
 
 import { push } from 'connected-react-router';
-import { success, info } from 'react-notification-system-redux';
+// import { success, info } from 'react-notification-system-redux';
 import axios from 'axios';
 
 import {
@@ -17,14 +17,14 @@ import {
   CLEAR_CART
 } from './constants';
 
-import {
-  SET_PRODUCT_SHOP_FORM_ERRORS,
-  RESET_PRODUCT_SHOP
-} from '../Product/constants';
+// import {
+//   SET_PRODUCT_SHOP_FORM_ERRORS,
+//   RESET_PRODUCT_SHOP
+// } from '../Product/constants';
 
-import handleError from '../../utils/error';
-import { toggleCart } from '../Navigation/actions';
-import { allFieldsValidation } from '../../utils/validation';
+// import handleError from '../../utils/error';
+import { toggleCart } from '../Header/actions';
+// import { allFieldsValidation } from '../../utils/validation';
 
 // Handle Add To Cart
 export const handleAddToCart = product => {
@@ -40,18 +40,18 @@ export const handleAddToCart = product => {
       quantity: `min:1|max:${result}`
     };
 
-    const { isValid, errors } = allFieldsValidation(product, rules, {
-      'min.quantity': 'Quantity must be at least 1.',
-      'max.quantity': `Quantity may not be greater than ${result}.`
-    });
+    // const { isValid, errors } = allFieldsValidation(product, rules, {
+    //   'min.quantity': 'Quantity must be at least 1.',
+    //   'max.quantity': `Quantity may not be greater than ${result}.`
+    // });
 
-    if (!isValid) {
-      return dispatch({ type: SET_PRODUCT_SHOP_FORM_ERRORS, payload: errors });
-    }
+    // if (!isValid) {
+    //   return dispatch({ type: SET_PRODUCT_SHOP_FORM_ERRORS, payload: errors });
+    // }
 
-    dispatch({
-      type: RESET_PRODUCT_SHOP
-    });
+    // dispatch({
+    //   type: RESET_PRODUCT_SHOP
+    // });
 
     dispatch({
       type: ADD_TO_CART,
@@ -122,7 +122,7 @@ export const handleCheckout = () => {
 
     dispatch(toggleCart());
     dispatch(push('/login'));
-    dispatch(success(successfulOptions));
+    // dispatch(success(successfulOptions));
   };
 };
 
@@ -149,7 +149,7 @@ export const getCartId = () => {
         dispatch(setCartId(response.data.cartId));
       }
     } catch (error) {
-      handleError(error, dispatch);
+      // handleError(error, dispatch);
     }
   };
 };
