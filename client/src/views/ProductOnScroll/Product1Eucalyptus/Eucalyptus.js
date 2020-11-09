@@ -8,7 +8,7 @@ export default () => {
             <div className="row section">
                 <div className="col">
                     <div className="product">
-                        <h1 className="display-1 productName">Product Name</h1>
+                        <h1 className="display-1 productName">Eucalyptus Tea Tree</h1>
                         <span className="top">&uarr;</span>
                         <div className="mockup"></div>
                     </div>
