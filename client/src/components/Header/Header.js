@@ -7,6 +7,7 @@ import { render } from "react-dom";
 import SlidingPane from "../Sliding-Cart/dist/react-sliding-pane";
 import "../Sliding-Cart/dist/react-sliding-pane.css";
 import { connect } from 'react-redux';
+import About from "../../views/About/About"
 
 import { Link, NavLink as ActiveLink, withRouter } from 'react-router-dom';
 
@@ -39,7 +40,7 @@ const Header = () => {
                 </ul>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/about'>Our Story</Link>
+                        <Link className="topnav-link nav-link" to='/About'>Our Story</Link>
                     </li>
                 </ul>
             </div>

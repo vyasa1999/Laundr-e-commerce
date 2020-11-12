@@ -26,7 +26,7 @@ function ReactSlidingPane(_ref) {
       _ref$hideHeader = _ref.hideHeader,
       hideHeader = _ref$hideHeader === void 0 ? false : _ref$hideHeader;
   var directionClass = "slide-pane_from_".concat(from);
-  return /*#__PURE__*/React.createElement(Modal, {
+  return  /*#__PURE__*/React.createElement(Modal, {
     ariaHideApp: false,
     className: "slide-pane ".concat(directionClass, " ").concat(className || ""),
     overlayClassName: "slide-pane__overlay ".concat(overlayClassName || ""),
