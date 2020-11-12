@@ -5,7 +5,7 @@ import laundrLogo from "../../assets/laundr-assets/laundr-logo.png";
 import React, { Component, useState } from "react";
 import { render } from "react-dom";
 import SlidingPane from "../Sliding-Cart/dist/react-sliding-pane";
-import "react-sliding-pane/dist/react-sliding-pane.css";
+import "../Sliding-Cart/dist/react-sliding-pane.css";
 import { connect } from 'react-redux';
 
 import { Link, NavLink as ActiveLink, withRouter } from 'react-router-dom';
