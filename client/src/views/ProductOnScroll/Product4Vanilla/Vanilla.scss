@@ -1,0 +1,11 @@
+@import "../../../utils/utils";
+@import "../ProductOnScroll.scss";
+
+.vanilla {
+	// text-align: center;
+	background-image: url("../../../assets/laundr-assets/patterns/vanilla_pattern.png");
+
+	.mockup {
+		background-image: url("../../../assets/laundr-assets/packaging/coffeeMockup.png");
+	}
+}

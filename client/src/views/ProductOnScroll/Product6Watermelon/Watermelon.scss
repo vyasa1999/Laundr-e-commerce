@@ -1,0 +1,11 @@
+@import "../../../utils/utils";
+@import "../ProductOnScroll.scss";
+
+.watermelon {
+	// text-align: center;
+	background-image: url("../../../assets/laundr-assets/patterns/watermelon_pattern.png");
+
+	.mockup {
+		background-image: url("../../../assets/laundr-assets/packaging/watermelonMockup.png");
+	}
+}
