@@ -21,18 +21,24 @@
   "author": "Dakota Rennemann",
   "license": "MIT",
   "dependencies": {
-    "@fullpage/react-fullpage": "^0.1.18",
+
+    "all": "0.0.0",
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.0",
+    "connect-mongo": "^3.2.0",
+    "connect-mongodb": "^1.1.5",
+    "connect-mongodb-session": "^2.4.1",
     "express": "^4.17.1",
-    "fullpage.js": "^3.0.9",
+    "express-session": "^1.17.1",
+
     "mocha": "^6.2.1",
     "mongoose": "^5.7.1",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.10",
-    "react-bootstrap-validation": "^0.1.11",
-    "react-page-scroller": "^2.0.11-beta",
+
     "should": "^13.2.3",
+    "stripe": "^8.119.0",
+
     "supertest": "^4.0.2"
   },
   "homepage": "https://github.com/vyasa1999/Laundr-e-commerce.git#readme",
