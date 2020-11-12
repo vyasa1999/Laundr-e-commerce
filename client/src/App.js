@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
 
+
 // components
 import Header from "./components/Header/Header"
 
@@ -12,6 +13,7 @@ import HomeFooter from "./views/HomeFooter/HomeFooter";
 import ReactPageScroller from "react-page-scroller";
 
 const App = () => {
+    
     return (
         <div>
             <Header/>
