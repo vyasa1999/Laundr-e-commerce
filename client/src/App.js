@@ -18,6 +18,7 @@ const App = () => {
     return (
         <div>
             <Header/>
+            {/* <Home/> */}
             <ProductOnScroll/>
             {<Switch>
                 <Route exact path="/Home" component={Home} />

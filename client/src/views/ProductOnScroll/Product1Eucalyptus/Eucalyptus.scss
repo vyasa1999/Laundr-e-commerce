@@ -1,5 +1,5 @@
 @import "../../../utils/utils";
-@import '../ProductOnScroll.scss';
+@import "../ProductOnScroll.scss";
 
 .eucalyptus {
 	// text-align: center;
@@ -7,5 +7,8 @@
 
 	.mockup {
 		background-image: url("../../../assets/laundr-assets/packaging/eucalyptusMockup.png");
+	}
+	.productInfo {
+		background-color: $eucalyptus;
 	}
 }

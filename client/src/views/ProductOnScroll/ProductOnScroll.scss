@@ -17,18 +17,30 @@
 	}
 }
 
+.product {
+	min-height: 100%;
+}
+.productInfo {
+	margin: auto 0;
+}
+
+.btn-add-bomb {
+	background-color: $laundr-white;
+}
+
 .pattern {
 	background-size: contain;
 	background-repeat: repeat;
 	background-position: center;
 	min-height: 100vh;
+	// min-height: 100%;
 	-webkit-animation: backgroundScroll 30s linear infinite;
 	-webkit-animation-fill-mode: forwards;
 	animation: backgroundScroll 30s linear infinite;
 	animation-fill-mode: forwards;
 }
 .mockup {
-	background-size: 30%;
+	background-size: 50%;
 	// transform: rotate(90deg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -40,6 +52,6 @@
 	// padding-top: 20rem;
 }
 
-#footer{
+#footer {
 	height: 300px;
 }
