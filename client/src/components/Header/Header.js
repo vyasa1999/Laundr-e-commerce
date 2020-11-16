@@ -21,37 +21,36 @@ const Header = () => {
       });
 
     return (
-        <div className="navbar navbar-expand-lg navbar-light header">
-            <div className='topnav '>
-                {/* Logo */}
+        <div className="navbar navbar-expand-lg navbar-light header sticky-top">
+            <div className='topnav'>
                 <Link id="logo-link" to="/">
                     <img className="topnav-logo" src={ laundrLogo } alt="Laundr logo" />
                 </Link>
-
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
             </div>
-            {/* from template */}
-            {/* Page Links */}
             <div className="topnav-right collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link className="topnav-link nav-link" to='/'>Home </Link>
                     </li>
-                </ul>
-                <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/About' onClick={<Redirect to="/About" />}>Our Story</Link>
-                        {/* <Link className="topnav-link nav-link" to='/About'></Link> */}
+                        {/* <Link className="topnav-link nav-link" to='/About' onClick={<Redirect to="/About" />}>Our Story</Link> */}
+                        <Link className="topnav-link nav-link" to='/about'>Our Story</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/cart" className="topnav-link nav-link">
+                            <i class="fas fa-shopping-cart"></i>
+                        </Link>
                     </li>
                 </ul>
             </div>
-
-            <button onClick={() => setState({ isPaneOpen: true })}>
-                <i class="fas fa-shopping-cart"></i>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <SlidingPane
+
+            {/* <button onClick={() => setState({ isPaneOpen: true })}>
+                <i class="fas fa-shopping-cart"></i>
+            </button> */}
+            {/* <SlidingPane
                 className="shopping-cart-pane"
                 overlayClassName="some-custom-overlay-class"
                 isOpen={state.isPaneOpen}
@@ -61,7 +60,7 @@ const Header = () => {
                 // triggered on "<" on left top click or on outside click
                 setState({ isPaneOpen: false });
                 }}
-            ></SlidingPane>
+            ></SlidingPane> */}
         </div>
     )
 }

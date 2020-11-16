@@ -1,16 +1,11 @@
 import React from 'react';
 // import logo from '../../assets/logo.svg';
 import './ProductOnScroll.scss';
-import ReactPageScroller from 'react-page-scroller';
 import Home from "../Home/Home";
-import Eucalyptus from "./Product1Eucalyptus/Eucalyptus";
-import FreshAir from "./Product2Freshair/FreshAir";
-import Gardenia from "./Product3Gardenia/Gardenia";
-import Mahogany from "./Product5Mahogany/Mahogany";
-import Vanilla from "./Product4Vanilla/Vanilla";
-import Watermelon from "./Product6Watermelon/Watermelon";
 import HomeFooter from "../HomeFooter/HomeFooter";
 import ReactFullpage from '@fullpage/react-fullpage';
+
+import Product from "../Product/Product"
 
 const ProductOnScroll = () => (
     <ReactFullpage
@@ -25,27 +20,51 @@ const ProductOnScroll = () => (
                     </div>
 
                     <div className="section" id="section1">
-                        <FreshAir />
+                        {/* <FreshAir /> */}
+                        <Product 
+                            className="pattern freshAir"
+                            productName="Fresh Air"
+                        />
                     </div>
 
                     <div className="section" id="section2">
-                        <Gardenia />
+                        {/* <Gardenia /> */}
+                        <Product 
+                            className="pattern gardenia"
+                            productName="White Gardenia"
+                        />
                     </div>
 
                     <div className="section" id="section3">
-                        <Eucalyptus />
+                        {/* <Eucalyptus /> */}
+                        <Product 
+                            className="pattern eucalyptus"
+                            productName="Eucalyptus Tea Tree"
+                        />
                     </div>
 
                     <div className="section" id="section4">
-                        <Mahogany />
+                        {/* <Mahogany /> */}
+                        <Product 
+                            className="pattern mahogany"
+                            productName="Mahogany Teakwood"
+                        />
                     </div>
 
                     <div className="section" id="section5">
-                        <Vanilla  />
+                        {/* <Vanilla  /> */}
+                        <Product 
+                            className="pattern vanilla"
+                            productName="Coffee Vanilla"
+                        />
                     </div>
 
                     <div className="section" id="section6">
-                        <Watermelon  />
+                        {/* <Watermelon  /> */}
+                        <Product 
+                            className="pattern watermelon"
+                            productName="Watermelon Cucumber"
+                        />
                     </div>
 
                     <div className="section fp-auto-height" id="section7">

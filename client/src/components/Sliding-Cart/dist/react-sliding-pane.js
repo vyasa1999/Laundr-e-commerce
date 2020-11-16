@@ -1,5 +1,7 @@
 'use strict';
 
+const { default: Product } = require('../../Product/Product');
+
 Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
@@ -49,7 +51,9 @@ function ReactSlidingPane(_ref) {
     className: "slide-pane__subtitle"
   }, subtitle))), /*#__PURE__*/React.createElement("div", {
     className: "slide-pane__content"
-  }, children));
+  }, children), React.createElement("div", {
+    className: "slide-pane__content"
+  }, Product));
 }
 ReactSlidingPane.propTypes = {
   isOpen: _pt.bool.isRequired,

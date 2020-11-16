@@ -17,6 +17,12 @@
 	}
 }
 
+h1 {
+	// font-family: LaundrCalmer;
+}
+h2 {
+	font-family: "Roboto", sans-serif;
+}
 .product {
 	min-height: 100%;
 }
@@ -40,7 +46,7 @@
 	animation-fill-mode: forwards;
 }
 .mockup {
-	background-size: 50%;
+	background-size: 80%;
 	// transform: rotate(90deg);
 	background-repeat: no-repeat;
 	background-position: center;
