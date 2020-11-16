@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./cart.scss";
-export const Cart = (props) => {
+import "./Cart.scss";
+
+const Cart = (props) => {
   const [carts, setCarts] = useState([]);
   const [payload, setPayloader] = useState({});
   const [hasError, setError] = useState(false);
@@ -123,3 +124,5 @@ export const Cart = (props) => {
     </main>
   );
 };
+
+export default Cart

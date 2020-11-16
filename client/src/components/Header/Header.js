@@ -9,6 +9,8 @@ import "../Sliding-Cart/dist/react-sliding-pane.css";
 import { connect } from 'react-redux';
 import About from "../../views/About/About"
 import {Route, Switch, Redirect} from 'react-router-dom';
+import Cart from "../Cart/Cart"
+import {slide as Menu} from 'react-burger-menu'
 
 
 import { Link, NavLink as ActiveLink, withRouter } from 'react-router-dom';
@@ -20,6 +22,11 @@ const Header = () => {
         isPaneOpenLeft: false,
       });
 
+    const openSidebar = () => {
+        // document.getElementById("sidebar").sidebar('toggle')
+
+        document.querySelector("#sidebar").sidebar('toggle')
+    }
     return (
         <div className="navbar navbar-expand-lg navbar-light header sticky-top">
             <div className='topnav'>
@@ -30,16 +37,19 @@ const Header = () => {
             <div className="topnav-right collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/'>Home </Link>
+                        <Link className="topnav-link nav-link" to='/'>Home</Link>
                     </li>
                     <li className="nav-item">
                         {/* <Link className="topnav-link nav-link" to='/About' onClick={<Redirect to="/About" />}>Our Story</Link> */}
-                        <Link className="topnav-link nav-link" to='/about'>Our Story</Link>
+                        <Link className="topnav-link nav-link" to='/About'>Our Story</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/cart" className="topnav-link nav-link">
+                        {/* <Link to="/Cart" className="topnav-link nav-link">
+                            Cart
+                        </Link> */}
+                        <button onClick={openSidebar}>
                             <i class="fas fa-shopping-cart"></i>
-                        </Link>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -47,9 +57,8 @@ const Header = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            {/* <button onClick={() => setState({ isPaneOpen: true })}>
-                <i class="fas fa-shopping-cart"></i>
-            </button> */}
+            {/* <Cart className="slide-pane" isOpen={state.isPaneOpen}/> */}
+                
             {/* <SlidingPane
                 className="shopping-cart-pane"
                 overlayClassName="some-custom-overlay-class"
@@ -61,6 +70,30 @@ const Header = () => {
                 setState({ isPaneOpen: false });
                 }}
             ></SlidingPane> */}
+
+            <div id="sidebar" className="ui red vertical right sidebar menu">
+                <a class="item">
+                    <i class="home icon"></i>
+                    Home
+                </a>
+                <a class="active item">
+                    <i class="heart icon"></i>
+                    Current Section
+                </a>
+                <a class="item">
+                    <i class="facebook icon"></i>
+                    Like us on Facebook
+                </a>
+                <div class="item">
+                    <b>More</b>
+                    <div class="menu">
+                    <a class="item">About</a>
+                    <a class="item">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     )
 }

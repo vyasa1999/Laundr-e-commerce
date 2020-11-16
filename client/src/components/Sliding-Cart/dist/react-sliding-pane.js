@@ -1,7 +1,5 @@
 'use strict';
 
-const { default: Product } = require('../../Product/Product');
-
 Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
@@ -23,7 +21,6 @@ function ReactSlidingPane(_ref) {
       closeIcon = _ref.closeIcon,
       _ref$from = _ref.from,
       from = _ref$from === void 0 ? "right" : _ref$from,
-      width = _ref.width,
       shouldCloseOnEsc = _ref.shouldCloseOnEsc,
       _ref$hideHeader = _ref.hideHeader,
       hideHeader = _ref$hideHeader === void 0 ? false : _ref$hideHeader;
@@ -51,9 +48,7 @@ function ReactSlidingPane(_ref) {
     className: "slide-pane__subtitle"
   }, subtitle))), /*#__PURE__*/React.createElement("div", {
     className: "slide-pane__content"
-  }, children), React.createElement("div", {
-    className: "slide-pane__content"
-  }, Product));
+  }, children));
 }
 ReactSlidingPane.propTypes = {
   isOpen: _pt.bool.isRequired,

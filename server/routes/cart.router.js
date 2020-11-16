@@ -2,7 +2,7 @@ const cartController = require('../controllers/cart.controller.js'),
     express = require('express'), 
     router = express.Router()
 const config = require('../config/config.js');
-var stripe = require('stripe')(config.Stripe.SID);
+// var stripe = require('stripe')(config.Stripe.SID);
 var products = require("../models/product.model");
 var cart = require("../models/cart.model");
 

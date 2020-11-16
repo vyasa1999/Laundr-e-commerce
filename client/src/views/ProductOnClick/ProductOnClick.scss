@@ -1,4 +1,4 @@
-@import "../../../utils/utils";
+@import "../../utils/utils";
 
 @keyframes backgroundScroll {
 	from {
@@ -17,13 +17,21 @@
 	}
 }
 
-.eucalyptus {
-	// text-align: center;
-	background-image: url("../../../assets/laundr-assets/patterns/eucalyptus_pattern.png");
+h1 {
+	// font-family: LaundrCalmer;
+}
+h2 {
+	font-family: "Roboto", sans-serif;
+}
+.product {
+	min-height: 100%;
+}
+.productInfo {
+	margin: auto 0;
+}
 
-	.mockup {
-		background-image: url("../../../assets/laundr-assets/packaging/eucalyptusMockup.png");
-	}
+.btn-add-bomb {
+	background-color: $laundr-white;
 }
 
 .pattern {
@@ -31,14 +39,15 @@
 	background-repeat: repeat;
 	background-position: center;
 	min-height: 100vh;
+	// min-height: 100%;
 	-webkit-animation: backgroundScroll 30s linear infinite;
 	-webkit-animation-fill-mode: forwards;
 	animation: backgroundScroll 30s linear infinite;
 	animation-fill-mode: forwards;
 }
 .mockup {
-	background-size: 100%;
-	transform: rotate(90deg);
+	background-size: 80%;
+	// transform: rotate(90deg);
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 100vh;
@@ -47,4 +56,8 @@
 .productName {
 	margin-left: 5rem;
 	// padding-top: 20rem;
+}
+
+#footer {
+	height: 300px;
 }

@@ -7,8 +7,8 @@ import Header from "./components/Header/Header"
 import Products from "./components/Product/Product"
 
 // pages aka "views"
-import Home from "./views/Home/Home"
 import About from "./views/About/About"
+import Cart from "./components/Cart/Cart"
 import NotFound from "./views/NotFound"
 import ProductOnScroll from "./views/ProductOnScroll/ProductOnScroll"
 
@@ -17,13 +17,15 @@ const App = () => {
     return (
         <div className="App">
             <Header/>
-            {/* <Home/> */}
-            <ProductOnScroll/>
+            {/* <ProductOnScroll/> */}
             {<Switch>
-                <Route exact path="/Home" component={Home} />
-                <Route exact path="/About" component={About}/>
-                {/* <Redirect to="/Home" /> */}
-                <Route exact path="/" component={Products}/>
+                <Route exact path="/Home" component={ProductOnScroll} />
+                <Route exact path="/About" component={About} />
+                <Route exact path="/Cart" component={Cart} />
+                <Route exact path="/">
+                    <Redirect to="/Home" />
+                </Route>
+                <Route component={NotFound}/>
             </Switch>}
         </div>
     );
