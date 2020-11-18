@@ -17,7 +17,6 @@ const App = () => {
     return (
         <div className="App">
             <Header/>
-            {/* <ProductOnScroll/> */}
             {<Switch>
                 <Route exact path="/Home" component={ProductOnScroll} />
                 <Route exact path="/About" component={About} />
