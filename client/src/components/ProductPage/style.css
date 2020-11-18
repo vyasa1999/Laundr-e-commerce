@@ -16,7 +16,7 @@ body {
 }
 .section.bg-static {
     background-color: #85c1e9;
-    background-image: url("../../assets/laundr-assets/packaging/coffeeMockup.png");
+    background-image: url("../../assets/laundr-assets/bombs/Laundr Bomb Angle1.png");
     background-size: cover;
     background-position: center;
 
@@ -27,7 +27,7 @@ body {
     bottom: 0;
     right: auto;
     width: 100%;
-    background-image: url("../../assets/laundr-assets/bombs/Laundr Bomb Angle1.png");
+    background-image: url("../../assets/laundr-assets/packaging/coffeeMockup.png");
     background-size: cover;
     background-position: center;
 
