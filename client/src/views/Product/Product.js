@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import './Product.scss'
 import '../ProductOnScroll/ProductOnScroll.scss'
+import { Link, NavLink as ActiveLink, withRouter } from 'react-router-dom';
+
 
 const Product = (props) => {
     const [products, setProducts] = useState([]);
@@ -49,7 +51,8 @@ const Product = (props) => {
                     <div className="product">
                         {/* <span className="top">&uarr;</span> */}
                         {/* <div className="mockup"></div> */}
-                        <div className="mockup"></div>
+                        {/* <a href="/product"><div className="mockup"></div></a> */}
+                        <Link className="nav-link" to="/product"><div className="mockup"></div></Link>
                     </div>
                 </div>
                 <div className="col productInfo">

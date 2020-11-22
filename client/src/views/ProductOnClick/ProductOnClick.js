@@ -16,6 +16,10 @@ const ProductOnClick = () => (
             return (
                 <ReactFullpage.Wrapper>
 
+                    <div className="section" id="1234">
+                        this is from the product on click page
+                    </div>
+
                     {/* <div className="section" id="section1">
                         <Product 
                             className="pattern freshAir"

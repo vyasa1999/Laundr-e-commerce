@@ -11,6 +11,7 @@ import About from "./views/About/About"
 import Cart from "./components/Cart/Cart"
 import NotFound from "./views/NotFound"
 import ProductOnScroll from "./views/ProductOnScroll/ProductOnScroll"
+import ProductOnClick from "./views/ProductOnClick/ProductOnClick"
 
 const App = () => {
     
@@ -19,6 +20,7 @@ const App = () => {
             <Header/>
             {<Switch>
                 <Route exact path="/Home" component={ProductOnScroll} />
+                <Route exact path="/product" component={ProductOnClick} />
                 <Route exact path="/About" component={About} />
                 <Route exact path="/Cart" component={Cart} />
                 <Route exact path="/">
