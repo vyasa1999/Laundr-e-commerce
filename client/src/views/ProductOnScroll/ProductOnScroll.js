@@ -24,6 +24,7 @@ const ProductOnScroll = () => (
                         <Product 
                             className="pattern freshAir"
                             productName="Fresh Air"
+                            productID=""
                         />
                     </div>
 

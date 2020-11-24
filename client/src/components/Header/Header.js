@@ -44,12 +44,10 @@ const Header = () => {
                         <Link className="topnav-link nav-link" to='/About'>Our Story</Link>
                     </li>
                     <li className="nav-item">
-                        {/* <Link to="/Cart" className="topnav-link nav-link">
-                            Cart
-                        </Link> */}
-                        <button onClick={openSidebar}>
+                        <Link to="/Cart" className="topnav-link nav-link">Cart</Link>
+                        {/* <button onClick={openSidebar}>
                             <i class="fas fa-shopping-cart"></i>
-                        </button>
+                        </button> */}
                     </li>
                 </ul>
             </div>
