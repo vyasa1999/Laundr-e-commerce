@@ -7,7 +7,7 @@ const Cart = (props) => {
   const [payload, setPayloader] = useState({});
   const [hasError, setError] = useState(false);
   async function fetchCart() {
-    const res = await fetch("http://localhost:3000/cart");
+    const res = await fetch("http://localhost:5000/cart");
     res
       .json()
       .then((res) => {
@@ -21,7 +21,7 @@ const Cart = (props) => {
   }
   async function increaseQty(id) {
     try {
-      const res = await fetch("http://localhost:3000/cart", {
+      const res = await fetch("http://localhost:5000/cart", {
         method: "POST",
         body: JSON.stringify({
           productId: id,
@@ -40,7 +40,7 @@ const Cart = (props) => {
   }
   async function emptyCart() {
     try {
-      const res = await fetch("http://localhost:3000/cart/empty-cart", {
+      const res = await fetch("http://localhost:5000/cart/empty-cart", {
         method: "DELETE",
       });
       await res.json();
@@ -54,7 +54,7 @@ const Cart = (props) => {
     fetchCart();
   }, []);
   return (
-    <main>
+    <main className="Cart">
       <section>
         <div className="banner-innerpage">
           <div className="container">

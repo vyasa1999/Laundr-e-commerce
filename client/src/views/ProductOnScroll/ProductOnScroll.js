@@ -15,17 +15,17 @@ const ProductOnScroll = () => (
         render={({ state, fullpageApi }) => {
             return (
                 <ReactFullpage.Wrapper>
-                    <div className="section" id="section0">
+                    {/* <div className="section" id="section0">
                         <Home />
-                    </div>
+                    </div> */}
 
                     <div className="section" id="section1">
                         {/* <FreshAir /> */}
                         <Product 
                             className="pattern freshAir"
                             productName="Fresh Air"
-                            productID=""
-                        />
+                            productID="1234"
+                            />
                     </div>
 
                     <div className="section" id="section2">

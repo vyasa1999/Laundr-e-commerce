@@ -52,7 +52,7 @@ const Product = (props) => {
                         {/* <span className="top">&uarr;</span> */}
                         {/* <div className="mockup"></div> */}
                         {/* <a href="/product"><div className="mockup"></div></a> */}
-                        <Link className="nav-link" to="/product"><div className="mockup"></div></Link>
+                        <Link className="nav-link" to={`/product/` + props.productID}><div className="mockup"></div></Link>
                     </div>
                 </div>
                 <div className="col productInfo">

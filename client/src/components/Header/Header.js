@@ -28,7 +28,7 @@ const Header = () => {
         document.querySelector("#sidebar").sidebar('toggle')
     }
     return (
-        <div className="navbar navbar-expand-lg navbar-light header sticky-top">
+        <div className="navbar navbar-expand-lg navbar-light header fixed-top">
             <div className='topnav'>
                 <Link id="logo-link" to="/">
                     <img className="topnav-logo" src={ laundrLogo } alt="Laundr logo" />

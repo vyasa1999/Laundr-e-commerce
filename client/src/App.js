@@ -7,11 +7,13 @@ import Header from "./components/Header/Header"
 import Products from "./components/Product/Product"
 
 // pages aka "views"
+import Home from "./views/Home/Home"
 import About from "./views/About/About"
 import Cart from "./components/Cart/Cart"
 import NotFound from "./views/NotFound"
 import ProductOnScroll from "./views/ProductOnScroll/ProductOnScroll"
 import ProductOnClick from "./views/ProductOnClick/ProductOnClick"
+import FreshAir from "./views/ProductOnClick/FreshAir/FreshAir"
 
 const App = () => {
     
@@ -19,12 +21,20 @@ const App = () => {
         <div className="App">
             <Header/>
             {<Switch>
-                <Route exact path="/Home" component={ProductOnScroll} />
-                <Route exact path="/product" component={ProductOnClick} />
-                <Route exact path="/About" component={About} />
-                <Route exact path="/Cart" component={Cart} />
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/products" component={ProductOnScroll} />
+
+                {/* 
+                
+                giving each product its own *clicked* page
+                setting up individual Routes like FreshAir example below
+                
+                */}
+                <Route exact path="/product/1234" component={FreshAir} />
+                <Route exact path="/cart" component={Cart} />
                 <Route exact path="/">
-                    <Redirect to="/Home" />
+                    <Redirect to="/home" />
                 </Route>
                 <Route component={NotFound}/>
             </Switch>}
