@@ -57,7 +57,7 @@ const Cart = (props) => {
     <main className="Cart">
       <section>
         <div className="banner-innerpage">
-          <div className="container">
+          <div className="container justify-content-center">
             <div className="row justify-content-center">
               <div className="col-md-6 align-self-center text-center">
                 <h1 className="title">Cart Listing</h1>
@@ -71,7 +71,7 @@ const Cart = (props) => {
       </section>
       <section>
         <div className="spacer">
-          <div className="container">
+          <div className="container justify-content-center">
             <div className="row mt-5">
               <div className="col-lg-9">
                 <div className="row shop-listing">
