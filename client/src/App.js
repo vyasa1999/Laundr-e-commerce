@@ -14,6 +14,11 @@ import NotFound from "./views/NotFound"
 import ProductOnScroll from "./views/ProductOnScroll/ProductOnScroll"
 import ProductOnClick from "./views/ProductOnClick/ProductOnClick"
 import FreshAir from "./views/ProductOnClick/FreshAir/FreshAir"
+import EucalyptusTeaTree from "./views/ProductOnClick/EucalyptusTeaTree/EucalyptusTeaTree"
+import WatermelonCucumber from "./views/ProductOnClick/WatermelonCucumber/WatermelonCucumber"
+import MahoganyTeakwood from "./views/ProductOnClick/MahoganyTeakwood/MahoganyTeakwood"
+import WhiteGardenia from "./views/ProductOnClick/WhiteGardenia/WhiteGardenia"
+import CoffeeVanilla from "./views/ProductOnClick/CoffeeVanilla/CoffeeVanilla"
 
 const App = () => {
     
@@ -31,7 +36,12 @@ const App = () => {
                 setting up individual Routes like FreshAir example below
                 
                 */}
-                <Route exact path="/product/1234" component={FreshAir} />
+                <Route exact path="/product/lpfa" component={FreshAir} />
+                <Route exact path="/product/lpett" component={EucalyptusTeaTree} />
+                <Route exact path="/product/lpwc" component={WatermelonCucumber} />
+                <Route exact path="/product/lpmt" component={MahoganyTeakwood} />
+                <Route exact path="/product/lpwg" component={WhiteGardenia} />
+                <Route exact path="/product/lpcv" component={CoffeeVanilla} />
                 <Route exact path="/cart" component={Cart} />
                 <Route exact path="/">
                     <Redirect to="/home" />

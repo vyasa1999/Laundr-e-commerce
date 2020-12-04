@@ -1,10 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, setState } from "react";
 import './Product.scss'
 import '../ProductOnScroll/ProductOnScroll.scss'
 import { Link, NavLink as ActiveLink, withRouter } from 'react-router-dom';
 
 
 const Product = (props) => {
+    const [productToAdd, setProductToAdd] = useState([{
+        name: props.productName,
+        price: 18.99,
+        productID: props.productID
+    }])
+
+    const [isCartEmpty, setIsCartEmpty] = useState(true)
+    const [cartSize, setCartSize] = useState(1)
+
     // const [products, setProducts] = useState([]);
     // const [hasError, setError] = useState(false);
     // async function fetchData() {
@@ -45,8 +54,16 @@ const Product = (props) => {
     // console.log(products);
 
     const addToCart = () => {
-        alert("this isn't what should happen but i'm testing things")
+        setIsCartEmpty(false)
     }
+    const increaseQty = () => {
+        setCartSize(cartSize + 1)
+    }
+    const decreaseQty = () => {
+        setCartSize(cartSize - 1)
+    }
+
+
 
     return (
         <div className={props.className}>
@@ -62,7 +79,14 @@ const Product = (props) => {
                 <div className="col productInfo">
                     <h1 className='display-2'>{props.productName}</h1>
                     <h2>$18.99</h2>
-                    <button onClick={addToCart} className="btn btn-md btn-info">Add to Cart</button>
+                    {isCartEmpty
+                        ? <button onClick={addToCart} className="btn btn-md btn-info">Add to Cart</button>
+                        : <div>
+                                <button onClick={decreaseQty} className="btn btn-danger">-</button>
+                                {cartSize}
+                                <button onClick={increaseQty} className="btn btn-danger">+</button>
+                          </div>
+                    }
                 </div>
             </div>
         </div>

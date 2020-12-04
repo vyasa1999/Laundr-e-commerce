@@ -281,8 +281,11 @@ p {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgb(255, 255, 255);
-	color: rgb(31, 31, 31);
+	// background: #004850;
+	// color: rgb(240, 240, 240);
+	color: #212529;
+	background: #fefefe;
+	border: 1px solid black;
 	overflow: auto;
 	padding: 1em;
 	border-radius: 25px;
