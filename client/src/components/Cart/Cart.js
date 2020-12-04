@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "./Cart.scss";
 
 const Cart = (props) => {
+    /* 
+      need to figure out how to transfer data between Cart.js and Product.js using props?? or otherwise???? :(
+    */
+
   const [carts, setCarts] = useState([]);
   const [payload, setPayloader] = useState({});
   const [hasError, setError] = useState(false);

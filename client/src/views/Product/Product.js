@@ -55,9 +55,45 @@ const Product = (props) => {
 
     const addToCart = () => {
         setIsCartEmpty(false)
+
+        try {
+            const res = fetch("http://localhost:5000/" + props.productID + "/" + "1", {
+              method: "POST",
+              body: JSON.stringify({
+                productId: props.productID,
+                quantity: 1,
+              }),
+              headers: {
+                "Content-type": "application/json; charset=UTF-8",
+              },
+            });
+            console.log(res);
+            // fetchCart();
+            // alert("Item Incremented");
+          } catch (err) {
+            console.log(err);
+          }
     }
     const increaseQty = () => {
         setCartSize(cartSize + 1)
+
+        try {
+            const res = fetch("http://localhost:5000/:productId/:quantity", {
+              method: "POST",
+              body: JSON.stringify({
+                productId: props.productID,
+                quantity: 1,
+              }),
+              headers: {
+                "Content-type": "application/json; charset=UTF-8",
+              },
+            });
+            console.log(res);
+            // fetchCart();
+            // alert("Item Incremented");
+          } catch (err) {
+            console.log(err);
+          }
     }
     const decreaseQty = () => {
         setCartSize(cartSize - 1)
