@@ -4,7 +4,7 @@ import './ProductOnScroll.scss';
 import Home from "../Home/Home";
 import HomeFooter from "../HomeFooter/HomeFooter";
 import ReactFullpage from '@fullpage/react-fullpage';
-
+import CreditCardForm from "../../components/CreditCardForm/CreditCardForm";
 import Product from "../Product/Product"
 
 const ProductOnScroll = () => (
@@ -27,6 +27,12 @@ const ProductOnScroll = () => (
                         could consider convert to numbers, 
                             just wasn't sure what number system to use other than 1-6
                     */}
+
+                    {/*remove below after tested*/}
+                    <div className="section" id="section9">
+                        <CreditCardForm />
+                    </div>
+
 
                     <div className="section" id="LPFA">
                         {/* <FreshAir /> */}
