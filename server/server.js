@@ -2,11 +2,13 @@ const express = require('./config/express.js');
 var session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 var path = require('path');
+const config = require('./config/config.js');
+const stripe = require('stripe')(config.Stripe.SID);
 const CartTester = require('./routes/cart.router.js')
 const CartRouter = require('./routes/cart.router.js');
 const ProductsRouter = require('./routes/products.router.js');
 const UserRouter = require('./routes/user.router.js');
-const config = require('./config/config.js');
+const StripeRouter = require('./routes/stripe.router.js');
 const {connectToDatabase} = require('./config/connectMongodb.js');
 const bodyParser = require('body-parser');
 
@@ -57,14 +59,10 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
-
-
-
-
 app.use('/auth', UserRouter);
 app.use('/api/products', ProductsRouter);
 app.use('/api/cart', CartRouter);
+app.use('/api/stripe', StripeRouter);
 
 app.use('/tests/cart', CartTester);
 
