@@ -88,8 +88,8 @@ const ProductOnScroll = () => (
                         />
                     </div>
 
-                    <div className="section fp-auto-height" id="section7">
-                        <div id="footer"> <HomeFooter /> </div>
+                    <div className="section fp-auto-height" id="footer">
+                        <HomeFooter />
                     </div>
 
                 </ReactFullpage.Wrapper>
