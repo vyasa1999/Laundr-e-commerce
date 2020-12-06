@@ -13,8 +13,8 @@ const bodyParser = require('body-parser');
 // Passport includes
 var passport = require('passport');
 var crypto = require('crypto');
-var LocalStrategy = require('passport-local').Strategy;
-const User = require('./models/customer.model.js');
+var LocalStrategy = require('passport-local');
+var User = require('./models/customer.model.js');
 const { model } = require('./models/customer.model.js');
 //connect to mongo 
 const db = connectToDatabase().on(
@@ -50,42 +50,18 @@ app.use(session({
   saveUninitialized: true
 }));
 //passport initialization
-passport.use(new LocalStrategy(
-  function(username, password, cb){
-    User.findOne({username: username})
-      .then((User) => {
-        if(!User) {return cb(null, false)}
-
-        const isValid = validPassword(password, user.hash, user.salt);
-        if (isValid){
-          return cb(null, User);
-        } else {
-          return cb(null, false);
-        }
-      })
-      .catch((err) => {
-        cb.err;
-      });
-  }
-));
-
-passport.serializeUser(function(user, cb) {
-  cb(null, user.id);
-});
-passport.deserializeUser(function(id, cb) {
-  User.findById(id, function(err, user) {
-    if (err) {return cb(err);}
-    cb(null, user);
-  });
-});
-
-
-
-
-
-app.use(bodyParser.json());
 app.use(passport.initialize());
 app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+
+
+
+
+
 app.use('/auth', UserRouter);
 app.use('/api/products', ProductsRouter);
 app.use('/api/cart', CartRouter);

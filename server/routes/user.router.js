@@ -10,15 +10,6 @@ const bodyParser = require('body-parser');
 bodyParser.urlencoded({
     extended: true
 });
-function genPassword(password) {
-    var salt = crypto.randomBytes(32).toString('hex');
-    var genHash = crypto.pbkdf2Sync(password, salt, 10000, 64, 'sha512').toString('hex');
-    
-    return {
-      salt: salt,
-      hash: genHash
-    };
-}
 
 router.get('/login', (req, res, next) => {
    
@@ -44,12 +35,12 @@ router.get('/login', (req, res, next) => {
 //       });
 //     })(req, res, next);
 //   });
-router.post('/login', (req, res, next) => {
-    console.log(req.body.username);
-    console.log(req.password);
-    res.send(req.username);
-});
-//router.post('/login', passport.authenticate('local', { failureRedirect: '/auth/login-failure', successRedirect: '/auth/login-success' }));
+// router.post('/login', (req, res, next) => {
+//     console.log(req.body.username);
+//     console.log(req.password);
+//     res.send(req.username);
+// });
+router.post('/login', passport.authenticate('local', { failureRedirect: '/auth/login-failure', successRedirect: '/auth/login-success' }));
 router.get('/register', (req, res, next) => {
 
     const form = '<h1>Register Page</h1><form method="post" action="register">\
@@ -60,26 +51,18 @@ router.get('/register', (req, res, next) => {
     res.send(form);
     
 });
-router.post('/register', (req, res, next) => {
-    
-    const saltHash = genPassword(req.body.password);
-    
-    const salt = saltHash.salt;
-    const hash = saltHash.hash;
-
-    const newUser = new User({
-        username: req.body.username,
-        hash: hash,
-        salt: salt
-    });
-
-    newUser.save()
-        .then((user) => {
-            console.log(user);
+router.post('/register', (req, res) => {
+    // console.log(req.body.username);
+    // console.log(req.body.password);
+    User.register(new User({username: req.body.username}), req.body.password, function(err, user){
+        if(err){
+            console.log(err);
+            return res.render("register");
+        }
+        passport.authenticate("local")(req, res, function(){
+            res.redirect("/auth/login");
         });
-
-    res.redirect('/auth/login');
-
+    });
 });
 router.get('/protected-route', (req, res, next) => {
     
