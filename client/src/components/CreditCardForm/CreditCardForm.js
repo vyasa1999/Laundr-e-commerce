@@ -13,7 +13,7 @@ const CreditCardForm = () => {
 
             <div class="row">
                 <div className="col-75">
-                    <div className="container">
+                    <div className="container ml1">
                         <form action="/action_page.php">
 
                             <div className="row">
@@ -45,7 +45,7 @@ const CreditCardForm = () => {
                                     <label htmlFor="fname">Accepted Cards</label>
                                     <div className="icon-container" >
                                         <i className="fab fa-cc-visa" style={{color:"navy"}}></i>
-                                        <i className="fab fa-cc-discover" style={{color:"red"}}></i>
+                                        <i className="fab fa-cc-mastercard" style={{color:"red"}}></i>
                                         <i className="fab fa-cc-discover" style={{color:"orange"}}></i>
                                     </div>
 
@@ -74,7 +74,7 @@ const CreditCardForm = () => {
                                 <input type="checkbox" checked="checked" name="sameadr" /> Shipping address same as
                                 billing
                             </label>
-                            <input type="submit" value="Continue to checkout" className="btn" />
+                            <input type="submit" value="Continue to checkout" className="btn btn-info" />
                         </form>
                     </div>
                 </div>

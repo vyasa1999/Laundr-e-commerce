@@ -1,5 +1,6 @@
 import React from 'react';
 import "../../Product/Product.scss"
+import "../../../functions/ParallaxEffect"
 
 const FreshAir = () => {
     return (

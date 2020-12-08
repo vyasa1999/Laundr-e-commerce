@@ -20,6 +20,7 @@ import MahoganyTeakwood from "./views/ProductOnClick/MahoganyTeakwood/MahoganyTe
 import WhiteGardenia from "./views/ProductOnClick/WhiteGardenia/WhiteGardenia"
 import CoffeeVanilla from "./views/ProductOnClick/CoffeeVanilla/CoffeeVanilla"
 
+
 const App = () => {
     
     return (
