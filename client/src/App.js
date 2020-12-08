@@ -19,6 +19,9 @@ import WatermelonCucumber from "./views/ProductOnClick/WatermelonCucumber/Waterm
 import MahoganyTeakwood from "./views/ProductOnClick/MahoganyTeakwood/MahoganyTeakwood"
 import WhiteGardenia from "./views/ProductOnClick/WhiteGardenia/WhiteGardenia"
 import CoffeeVanilla from "./views/ProductOnClick/CoffeeVanilla/CoffeeVanilla"
+import Checkout from "./views/Checkout/Checkout"
+import Login from "./views/Login/Login"
+import Register from "./views/Register/Register"
 
 
 const App = () => {
@@ -30,8 +33,9 @@ const App = () => {
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/products" component={ProductOnScroll} />
-                <Route exact path="/login" component={Home}/>
-                <Route exact path="/signup" component={Home}/>
+                <Route exact path="/login" component={Login}/>
+                <Route exact path="/register" component={Register}/>
+                <Route exact path="/checkout" component={Checkout}/>
 
                 {/* 
                 

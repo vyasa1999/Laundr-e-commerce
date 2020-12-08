@@ -1,5 +1,8 @@
 @import "../../utils/utils";
 
+// this file is basically a duplicate of ProductOnScroll right now.
+// determining vital changes that need to be made to truly differentiate the clicked products
+
 @keyframes backgroundScroll {
 	from {
 		background-position: 0 0;

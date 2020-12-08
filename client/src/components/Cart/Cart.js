@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Cart.scss";
+import CreditCardForm from "../CreditCardForm/CreditCardForm"
 
 const Cart = (props) => {
     /* 
@@ -123,6 +124,9 @@ const Cart = (props) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="container">
+          <Link className="btn btn-info" to="/checkout" >Provide Payment & Shipping Information</Link>
         </div>
       </section>
     </main>

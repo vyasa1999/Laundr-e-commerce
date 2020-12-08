@@ -11,11 +11,11 @@ const CreditCardForm = () => {
                       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             </head>
 
-            <div class="row">
+            <div class="container row">
                 <div className="col-75">
                     <div className="container ml1">
                         <form action="/action_page.php">
-
+                            {/* action needs to be changed to connect to proper backend/stripe functionality */}
                             <div className="row">
                                 <div className="col-50">
                                     <h3>Billing Address</h3>
@@ -75,6 +75,13 @@ const CreditCardForm = () => {
                                 billing
                             </label>
                             <input type="submit" value="Continue to checkout" className="btn btn-info" />
+                            {/* 
+                            
+                            ^ redirects user to Checkout Confirmation page, 
+                            listing all order, payment, and shipping info
+                            button on CC page to confirm purchase 
+                                
+                            */}
                         </form>
                     </div>
                 </div>

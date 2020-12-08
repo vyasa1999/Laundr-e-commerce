@@ -35,10 +35,10 @@ const Header = () => {
                         // when (user detected) return sign out button
                     }
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/'>Login</Link>
+                        <Link className="topnav-link nav-link" to='/login'>Login</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/'>Sign Up</Link>
+                        <Link className="topnav-link nav-link" to='/register'>Register</Link>
                     </li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@ const Header = () => {
 
             <div class="panel-wrap">
                 <div class="panel">
-                    <h3>Yay! Panels!</h3>
+                    <h3>Shopping Cart</h3>
                     <Cart />
                 </div>
             </div>

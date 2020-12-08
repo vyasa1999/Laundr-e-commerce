@@ -21,21 +21,16 @@ const ProductOnScroll = () => (
 
                     {/* 
                         grab productIDs from database
+                        make sure to change routing in App.js
                     */}
-
-                    {/*remove below after tested*/}
-                    <div className="section" id="section9">
-                        <CreditCardForm />
-                    </div>
-
 
                     <div className="section" id="LPFA">
                         {/* <FreshAir /> */}
                         <Product 
                             className="pattern freshAir"
                             productName="Fresh Air"
-                            // productID="LPFA"
-                            productID="5f9cc183c0a77a418c0f8b15"
+                            productID="LPFA"
+                            // productID="5f9cc183c0a77a418c0f8b15"
                             />
                     </div>
 
