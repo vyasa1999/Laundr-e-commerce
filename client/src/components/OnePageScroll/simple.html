@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.css"/>
+    <link rel="stylesheet" type="text/css" href="simple.css"/>
+
+</head>
+
+<body>
+    <!-- Dont touch -->
+    <script type="text/javascript" src="https://unpkg.com/fullpage.js/dist/fullpage.js"></script>
+    <script>
+        // fullpage.js initialization
+        new fullpage('#fullpage', {
+            scrollingSpeed: 1000,
+            verticalCentered: false
+        });
+    </script>
+    <!-- end of dont touch -->
+
+
+
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <h1>Product 1</h1>
+        </div>
+
+        <div class="section" id="section2">
+            <h1>Product 2</h1>
+        </div>
+
+        <div class="section" id="section3">
+            <h1>Slide 3 </h1>
+        </div>
+
+        <div class="section" id="section4">
+            <h1>Product 4</h1>
+        </div>
+
+
+        <div class="section" id="section5">
+            <h1>Product 5</h1>
+        </div>
+
+        <div class="section fp-auto-height">
+            <div class="content">Four</div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            <!-- change page color below -->
+            // sectionsColor: ['yellow', 'red']
+
+        });
+    </script>
+
+
+</body>
+</html>

@@ -6,8 +6,8 @@ hate anything and I'll make modifications.
 #### Based on our wireframes, feel free to add where you see fit
 
 -   Landing.js // Landing.scss
--   ProductOnScroll.js // ProductOnScroll.js
--   ProductOnDetails.js // ProductOnDetails.js
+-   ProductOnScroll.js // ProductOnScroll.scss
+-   ProductOnDetails.js // ProductOnDetails.scss
 -   Checkout.js // Checkout.js
 
 #### Naming Conventions

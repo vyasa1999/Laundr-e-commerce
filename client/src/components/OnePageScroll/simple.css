@@ -1,0 +1,56 @@
+.section {
+    text-align: center;
+    color: orangered;
+    font-size: 3em;
+    z-index: 100;
+
+}
+
+.content {
+    margin: 50px
+}
+
+
+#section1{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/coffeeMockup.png);
+    background-size: cover;
+
+}
+
+
+
+#section2{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/eucalyptusMockup.png);
+    background-size: cover;
+}
+
+
+
+#section3{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/freshairMockup.png);
+    background-size: cover;
+}
+
+
+#section4{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/gardeniaMockup.png);
+    background-size: cover;
+}
+
+
+#section5{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/mahoganymockup.png);
+    background-size: cover;
+}
+
+
+#section6{
+    background-color: #F9F9F9;
+    background-image: url(../../assets/laundr-assets/packaging/watermelonMockup.png);
+    background-size: cover;
+}

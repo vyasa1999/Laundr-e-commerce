@@ -1,0 +1,72 @@
+@import "../../utils/utils";
+@import "../ProductOnScroll/ProductOnScroll.scss";
+
+.freshAir {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/freshair_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/freshairMockup.png");
+	}
+
+	.productInfo {
+		background-color: $fresh-air;
+	}
+}
+.eucalyptus {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/eucalyptus_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/eucalyptusMockup.png");
+	}
+	.productInfo {
+		background-color: $eucalyptus;
+	}
+}
+.gardenia {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/gardenia_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/gardeniaMockup.png");
+	}
+
+	.productInfo {
+		background-color: $white-gardenia;
+	}
+}
+.vanilla {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/vanilla_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/coffeeMockup.png");
+	}
+	.productInfo {
+		background-color: $coffee-vanilla;
+	}
+}
+.mahogany {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/mahogany_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/mahoganymockup.png");
+	}
+
+	.productInfo {
+		background-color: $mahogany-teakwood;
+	}
+}
+.watermelon {
+	// text-align: center;
+	background-image: url("../../assets/laundr-assets/patterns/watermelon_pattern.png");
+
+	.mockup {
+		background-image: url("../../assets/laundr-assets/packaging/watermelonMockup.png");
+	}
+	.productInfo {
+		background-color: $watermelon-cucumber;
+	}
+}
