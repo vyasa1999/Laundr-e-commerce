@@ -57,7 +57,7 @@ const Product = (props) => {
         setIsCartEmpty(false)
 
         try {
-            const res = fetch("http://localhost:5000/" + props.productID + "/" + "1", {
+            const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
               method: "POST",
               body: JSON.stringify({
                 productId: props.productID,
@@ -97,8 +97,10 @@ const Product = (props) => {
     }
     const decreaseQty = () => {
         setCartSize(cartSize - 1)
+        if(cartSize == 0) {
+            setIsCartEmpty(true)
+        }
     }
-
 
 
     return (
@@ -106,9 +108,6 @@ const Product = (props) => {
             <div className="row">
                 <div className="col">
                     <div className="product">
-                        {/* <span className="top">&uarr;</span> */}
-                        {/* <div className="mockup"></div> */}
-                        {/* <a href="/product"><div className="mockup"></div></a> */}
                         <Link className="nav-link" to={`/product/` + props.productID}><div className="mockup"></div></Link>
                     </div>
                 </div>

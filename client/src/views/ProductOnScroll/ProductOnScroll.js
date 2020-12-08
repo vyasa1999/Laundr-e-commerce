@@ -20,12 +20,7 @@ const ProductOnScroll = () => (
                     </div> */}
 
                     {/* 
-                        wasn't sure how we should be ID-ing the products
-                        but since there's only 6 I thought something simple would do:
-                        example: LPFA = Laundr Product: Fresh Air
-                        so acronym of LP + product name abbreviation
-                        could consider convert to numbers, 
-                            just wasn't sure what number system to use other than 1-6
+                        grab productIDs from database
                     */}
 
                     {/*remove below after tested*/}
@@ -39,7 +34,8 @@ const ProductOnScroll = () => (
                         <Product 
                             className="pattern freshAir"
                             productName="Fresh Air"
-                            productID="LPFA"
+                            // productID="LPFA"
+                            productID="5f9cc183c0a77a418c0f8b15"
                             />
                     </div>
 

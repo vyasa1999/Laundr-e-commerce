@@ -29,6 +29,17 @@ const Header = () => {
                             <i class="fas fa-shopping-cart"></i>
                         </button> */}
                     </li>
+                    {
+                        // need logic to detect when a user is logged in
+                        // when (no user detected) return both login and sign up buttons
+                        // when (user detected) return sign out button
+                    }
+                    <li className="nav-item">
+                        <Link className="topnav-link nav-link" to='/'>Login</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="topnav-link nav-link" to='/'>Sign Up</Link>
+                    </li>
                 </ul>
             </div>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
