@@ -1,24 +1,42 @@
-import React from "react";
-import './Eucalyptus.scss'
+import ReactFullpage from '@fullpage/react-fullpage';
+import "./Eucalyptus.css"
+import "./ScrollingAnimation"
+import React from 'react';
+import $ from 'jquery';
+import CreditCardForm from "../../../components/CreditCardForm/CreditCardForm";
+import Product from "../../Product/Product";
+import HomeFooter from "../../HomeFooter/HomeFooter";
 
-// intended to display when the product package is clicked
+/*
+$(window).on("load resize scroll", function() {
+    $(".bg-static").each(function() {
+        var windowTop = $(window).scrollTop();
+        var elementTop = $(this).offset().top;
+        var leftPosition = windowTop - elementTop;
+        $(this)
+            .find(".bg-move")
+            .css({ left: leftPosition });
+    });
+}); */
 
 
-export default () => {
+const Eucalyptus = () => {
     return (
-        <div id="fullpage" className="pattern eucalyptus">
-            <div className="row section">
-                <div className="col">
-                    <div className="product">
-                        <h1 className="display-1 productName">Eucalyptus Tea Tree</h1>
-                        <span className="top">&uarr;</span>
-                        <div className="mockup"></div>
-                    </div>
-                </div>
-                <div className="col">
-                    <h1 className="display-1">PRICE STUFF HERE</h1>
-                </div>
+        <div>
+
+            <div className="section bg-static">
+                <div className="bg-move"></div>
             </div>
+            <div className="section">
+                The boat image is moving only when scrolling.
+            </div>
+
+
         </div>
+
+
     );
-};
+
+}
+
+export default Eucalyptus

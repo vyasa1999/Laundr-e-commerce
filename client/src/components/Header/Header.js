@@ -1,63 +1,62 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-import './Header.scss';
-import laundrLogo from "../../assets/laundr-assets/laundr-logo.png";
 import React, { Component, useState } from "react";
-import { render } from "react-dom";
-import SlidingPane from "../Sliding-Cart/dist/react-sliding-pane";
-import "react-sliding-pane/dist/react-sliding-pane.css";
-import { connect } from 'react-redux';
-
 import { Link, NavLink as ActiveLink, withRouter } from 'react-router-dom';
+import laundrLogo from "../../assets/laundr-assets/laundr-logo.png";
+import Cart from "../Cart/Cart"
+import "../Sliding-Cart/dist/react-sliding-pane.css";
+import './Header.scss';
+import { PromiseProvider } from 'mongoose';
 
 const Header = () => {
-
-    const [state, setState] = useState({
-        isPaneOpen: false,
-        isPaneOpenLeft: false,
-      });
-
+   
     return (
-        <div className="navbar navbar-expand-lg navbar-light header">
-            <div className='topnav '>
-                {/* Logo */}
+        <div className="navbar navbar-expand-lg navbar-light header fixed-top">
+            <div className='topnav'>
                 <Link id="logo-link" to="/">
                     <img className="topnav-logo" src={ laundrLogo } alt="Laundr logo" />
                 </Link>
-
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
             </div>
-            {/* from template */}
-            {/* Page Links */}
             <div className="topnav-right collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/'>Home </Link>
+                        <Link className="topnav-link nav-link" to='/'>Home</Link>
                     </li>
-                </ul>
-                <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/about'>Our Story</Link>
+                        <Link className="topnav-link nav-link" to='/About'>Our Story</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/Cart" className="topnav-link nav-link">Cart</Link>
+                        {/* <button onClick={openSidebar}>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button> */}
+                    </li>
+                    {
+                        // need logic to detect when a user is logged in
+                        // when (no user detected) return both login and sign up buttons
+                        // when (user detected) return sign out button
+                    }
+                    <li className="nav-item">
+                        <Link className="topnav-link nav-link" to='/login'>Login</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="topnav-link nav-link" to='/register'>Register</Link>
                     </li>
                 </ul>
             </div>
-
-            <button onClick={() => setState({ isPaneOpen: true })}>
-                <i class="fas fa-shopping-cart"></i>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <SlidingPane
-                className="shopping-cart-pane"
-                overlayClassName="some-custom-overlay-class"
-                isOpen={state.isPaneOpen}
-                title="Your Cart"
-                subtitle="You're just a few clicks away from fresher loads!"
-                onRequestClose={() => {
-                // triggered on "<" on left top click or on outside click
-                setState({ isPaneOpen: false });
-                }}
-            ></SlidingPane>
+
+            <input id="clicker" type="checkbox" />
+            <label for="clicker">View Cart</label>
+
+            <div class="panel-wrap">
+                <div class="panel">
+                    <h3>Shopping Cart</h3>
+                    <Cart />
+                </div>
+            </div>
+
+            
         </div>
     )
 }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.18",
     "@mdi/js": "^5.7.55",
     "@mdi/react": "^1.4.0",
     "axios": "^0.21.0",
@@ -12,6 +13,7 @@
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.0",
+    "react-burger-menu": "^2.9.0",
     "react-dom": "^16.14.0",
     "react-notification-system-redux": "^2.0.1",
     "react-redux": "^7.2.2",
@@ -42,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "jquery": "^3.5.1",
     "react-router-dom": "^5.1.2"
   },
   "proxy": "http://localhost:3000"

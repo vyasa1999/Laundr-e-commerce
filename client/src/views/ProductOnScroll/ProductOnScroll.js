@@ -1,16 +1,11 @@
 import React from 'react';
 // import logo from '../../assets/logo.svg';
 import './ProductOnScroll.scss';
-import ReactPageScroller from 'react-page-scroller';
 import Home from "../Home/Home";
-import Eucalyptus from "./Product1Eucalyptus/Eucalyptus";
-import FreshAir from "./Product2Freshair/FreshAir";
-import Gardenia from "./Product3Gardenia/Gardenia";
-import Mahogany from "./Product5Mahogany/Mahogany";
-import Vanilla from "./Product4Vanilla/Vanilla";
-import Watermelon from "./Product6Watermelon/Watermelon";
 import HomeFooter from "../HomeFooter/HomeFooter";
 import ReactFullpage from '@fullpage/react-fullpage';
+import CreditCardForm from "../../components/CreditCardForm/CreditCardForm";
+import Product from "../Product/Product"
 
 const ProductOnScroll = () => (
     <ReactFullpage
@@ -20,36 +15,72 @@ const ProductOnScroll = () => (
         render={({ state, fullpageApi }) => {
             return (
                 <ReactFullpage.Wrapper>
-                    <div className="section" id="section0">
+                    {/* <div className="section" id="section0">
                         <Home />
+                    </div> */}
+
+                    {/* 
+                        grab productIDs from database
+                        make sure to change routing in App.js
+                    */}
+
+                    <div className="section" id="LPFA">
+                        {/* <FreshAir /> */}
+                        <Product 
+                            className="pattern freshAir"
+                            productName="Fresh Air"
+                            productID="LPFA"
+                            // productID="5f9cc183c0a77a418c0f8b15"
+                            />
                     </div>
 
-                    <div className="section" id="section1">
-                        <FreshAir />
+                    <div className="section" id="LPWG">
+                        {/* <Gardenia /> */}
+                        <Product 
+                            className="pattern gardenia"
+                            productName="White Gardenia"
+                            productID="LPWG"
+                        />
                     </div>
 
-                    <div className="section" id="section2">
-                        <Gardenia />
+                    <div className="section" id="LPETT">
+                        {/* <Eucalyptus /> */}
+                        <Product 
+                            className="pattern eucalyptus"
+                            productName="Eucalyptus Tea Tree"
+                            productID="LPETT"
+                        />
                     </div>
 
-                    <div className="section" id="section3">
-                        <Eucalyptus />
+                    <div className="section" id="LPMT">
+                        {/* <Mahogany /> */}
+                        <Product 
+                            className="pattern mahogany"
+                            productName="Mahogany Teakwood"
+                            productID="LPMT"
+                        />
                     </div>
 
-                    <div className="section" id="section4">
-                        <Mahogany />
+                    <div className="section" id="LPCV">
+                        {/* <Vanilla  /> */}
+                        <Product 
+                            className="pattern vanilla"
+                            productName="Coffee Vanilla"
+                            productID="LPCV"
+                        />
                     </div>
 
-                    <div className="section" id="section5">
-                        <Vanilla  />
+                    <div className="section" id="LPWC">
+                        {/* <Watermelon  /> */}
+                        <Product 
+                            className="pattern watermelon"
+                            productName="Watermelon Cucumber"
+                            productID="LPWC"
+                        />
                     </div>
 
-                    <div className="section" id="section6">
-                        <Watermelon  />
-                    </div>
-
-                    <div className="section fp-auto-height" id="section7">
-                        <div id="footer"> <HomeFooter /> </div>
+                    <div className="section fp-auto-height" id="footer">
+                        <HomeFooter />
                     </div>
 
                 </ReactFullpage.Wrapper>
