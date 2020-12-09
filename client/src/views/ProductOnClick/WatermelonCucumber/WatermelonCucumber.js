@@ -90,7 +90,7 @@ const WatermelonCucumber = (props) => {
                     </div>
 
                     <div className="col productInfo">
-                        <h1 className='display-2'>Eucalyptus Tea Tree</h1>
+                        <h1 className='display-2'>Watermelon Cucumber</h1>
                         <h2>$18.99</h2>
                         <p>A sweet, cool and refreshing smell for brightening up your day. Great for picnic blankets,
                             overalls, and being in a generally good mood.</p>
