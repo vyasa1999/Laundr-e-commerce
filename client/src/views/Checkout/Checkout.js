@@ -12,9 +12,7 @@ function Checkout() {
     return (
         <div className="Checkout">
             <div className="container">
-                <Elements stripe={promise}>
-                    <CheckoutForm />
-                </Elements>
+                <CreditCardForm />
             </div>
         </div>
     );
