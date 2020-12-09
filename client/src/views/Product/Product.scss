@@ -1,5 +1,17 @@
 @import "../../utils/utils";
-@import "../ProductOnScroll/ProductOnScroll.scss";
+// @import "../ProductOnScroll/ProductOnScroll.scss";
+
+.mockup {
+	background-size: 60%;
+	// transform: rotate(90deg);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+}
+
+.productName {
+	font-size: 3rem;
+}
 
 .freshAir {
 	// text-align: center;

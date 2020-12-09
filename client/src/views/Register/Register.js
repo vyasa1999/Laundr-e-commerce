@@ -12,15 +12,36 @@ export default function Register() {
   function validateForm() {
     return email.length > 0 && password.length > 0;
   }
+//  action="http://localhost:5000/auth/register"
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    try {
+      const res = fetch("http://localhost:5000/auth/register", {
+        method: "POST",
+        body: JSON.stringify({
+          username: event.value.username,
+          password: event.value.password,
+        }),
+      });
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   return (
     <div className="Register">
       <h1 className="text-center">Register</h1>
-      <Form onSubmit={handleSubmit}>
+        <form method="POST" action="http://localhost:5000/auth/register">
+          <label>Enter username (email):</label>
+          <input type="text" name="username"/>
+          <label>Enter password:</label>
+          <input type="password" name="password"/>
+          <input type="submit" value="Login"></input>
+        </form>
+
+      {/* <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
@@ -41,7 +62,7 @@ export default function Register() {
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Register
         </Button>
-      </Form>
+      </Form> */}
     </div>
   );
 }

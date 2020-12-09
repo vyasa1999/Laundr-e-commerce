@@ -1,6 +1,5 @@
 import React, { useState, useEffect, setState } from "react";
 import './Product.scss'
-import '../ProductOnScroll/ProductOnScroll.scss'
 import { Link, NavLink as ActiveLink, withRouter } from 'react-router-dom';
 
 
@@ -16,6 +15,7 @@ const Product = (props) => {
 
     const addToCart = () => {
         setIsCartEmpty(false)
+        setCartSize(1)
 
         try {
             const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
@@ -39,7 +39,7 @@ const Product = (props) => {
         setCartSize(cartSize + 1)
 
         try {
-            const res = fetch("http://localhost:5000/:productId/:quantity", {
+            const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
               method: "POST",
               body: JSON.stringify({
                 productId: props.productID,
@@ -57,9 +57,27 @@ const Product = (props) => {
           }
     }
     const decreaseQty = () => {
-        setCartSize(cartSize - 1)
-        if(cartSize == 0) {
+        setCartSize(cartSize-1)
+        if(cartSize === 1) {
             setIsCartEmpty(true)
+        }
+
+        try {
+          const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
+            method: "DELETE",
+            body: JSON.stringify({
+              productId: props.productID,
+              quantity: 1,
+            }),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8",
+            },
+          });
+          console.log(res);
+          // fetchCart();
+          // alert("Item Incremented");
+        } catch (err) {
+          console.log(err);
         }
     }
 
