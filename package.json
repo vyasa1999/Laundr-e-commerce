@@ -21,6 +21,8 @@
   "author": "Dakota Rennemann",
   "license": "MIT",
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
     "all": "0.0.0",
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.0",
@@ -38,7 +40,7 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1",
     "should": "^13.2.3",
-    "stripe": "^8.119.0",
+    "stripe": "^8.127.0",
     "supertest": "^4.0.2"
   },
   "homepage": "https://github.com/vyasa1999/Laundr-e-commerce.git#readme",

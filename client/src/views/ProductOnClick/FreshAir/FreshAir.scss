@@ -1,0 +1,26 @@
+.sectionFreshAir {
+  position: relative;
+  max-width: 920px;
+  min-height: 75vh;
+  padding: 40px;
+  margin: auto;
+  color: #ffffff;
+}
+
+.sectionFreshAir.bg-static {
+  background-image: url("../../../assets/laundr-assets/bombs/Laundr Bomb Angle1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionFreshAir .bg-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 75%;
+  background-image: url("../../../assets/laundr-assets/packaging/freshairMockup.png");
+  background-size: cover;
+  background-position: center;
+  transform: rotate(270deg);
+}
