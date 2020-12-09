@@ -43,12 +43,12 @@ const App = () => {
                 setting up individual Routes like FreshAir example below
                 
                 */}
-                <Route exact path="/product/lpfa" component={FreshAir} />
-                <Route exact path="/product/lpett" component={EucalyptusTeaTree} />
-                <Route exact path="/product/lpwc" component={WatermelonCucumber} />
-                <Route exact path="/product/lpmt" component={MahoganyTeakwood} />
-                <Route exact path="/product/lpwg" component={WhiteGardenia} />
-                <Route exact path="/product/lpcv" component={CoffeeVanilla} />
+                <Route exact path="/product/5fd002b3160ed44708479032" component={FreshAir} />
+                <Route exact path="/product/5fd002cb160ed44708479034" component={EucalyptusTeaTree} />
+                <Route exact path="/product/5fd0028d160ed4470847902f" component={WatermelonCucumber} />
+                <Route exact path="/product/5fd002a8160ed44708479031" component={MahoganyTeakwood} />
+                <Route exact path="/product/5fd0029d160ed44708479030" component={WhiteGardenia} />
+                <Route exact path="/product/5fd002c2160ed44708479033" component={CoffeeVanilla} />
                 <Route exact path="/cart" component={Cart} />
                 <Route exact path="/">
                     <Redirect to="/home" />

@@ -29,8 +29,7 @@ const ProductOnScroll = () => (
                         <Product 
                             className="pattern freshAir"
                             productName="Fresh Air"
-                            productID="LPFA"
-                            // productID="5f9cc183c0a77a418c0f8b15"
+                            productID="5fd002b3160ed44708479032"
                             />
                     </div>
 
@@ -39,7 +38,7 @@ const ProductOnScroll = () => (
                         <Product 
                             className="pattern gardenia"
                             productName="White Gardenia"
-                            productID="LPWG"
+                            productID="5fd0029d160ed44708479030"
                         />
                     </div>
 
@@ -48,7 +47,7 @@ const ProductOnScroll = () => (
                         <Product 
                             className="pattern eucalyptus"
                             productName="Eucalyptus Tea Tree"
-                            productID="LPETT"
+                            productID="5fd002cb160ed44708479034"
                         />
                     </div>
 
@@ -57,7 +56,7 @@ const ProductOnScroll = () => (
                         <Product 
                             className="pattern mahogany"
                             productName="Mahogany Teakwood"
-                            productID="LPMT"
+                            productID="5fd002a8160ed44708479031"
                         />
                     </div>
 
@@ -66,7 +65,7 @@ const ProductOnScroll = () => (
                         <Product 
                             className="pattern vanilla"
                             productName="Coffee Vanilla"
-                            productID="LPCV"
+                            productID="5fd002c2160ed44708479033"
                         />
                     </div>
 
@@ -75,7 +74,7 @@ const ProductOnScroll = () => (
                         <Product 
                             className="pattern watermelon"
                             productName="Watermelon Cucumber"
-                            productID="LPWC"
+                            productID="5fd0028d160ed4470847902f"
                         />
                     </div>
 
