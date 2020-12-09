@@ -66,17 +66,18 @@ app.use('/api/stripe', StripeRouter);
 
 app.use('/tests/cart', CartTester);
 
+/*
 app.use('/home', (req,res) => {
   console.log(req.session);
   req.session.views++;
   res.send(`<h1>Home  ${req.session.views}</h1>`)
 });
 
-/*
 app.all('/*', (req, res) => {
   res.statusCode === 404 ? res.send('Sorry, information not available') : res.sendFile(path.resolve('./client/public/index.html'))
 });
 */
+
 function validPassword(password, hash, salt) {
   var hashVerify = crypto.pbkdf2Sync(password, salt, 10000, 64, 'sha512').toString('hex');
   return hash === hashVerify;

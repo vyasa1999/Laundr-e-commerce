@@ -78,7 +78,8 @@ router.get('/logout', (req, res, next) => {
     res.redirect('/auth/protected-route');
 });
 router.get('/login-success', (req, res, next) => {
-    res.send('<p>You successfully logged in. --> <a href="/protected-route">Go to protected route</a></p>');
+    // res.send('<p>You successfully logged in. --> <a href="/protected-route">Go to protected route</a></p>');
+    res.redirect('http://localhost:3000/home')
 });
 router.get('/login-failure', (req, res, next) => {
     res.send('You entered the wrong password.');

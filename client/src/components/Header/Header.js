@@ -35,10 +35,14 @@ const Header = () => {
                         // when (user detected) return sign out button
                     }
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/login'>Login</Link>
+                        {/* <Link className="topnav-link nav-link" to='/login'>Login</Link> */}
+                        {/* temporary link adjustment */}
+                        <a href="http://localhost:5000/auth/login">Login</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/register'>Register</Link>
+                        {/* <Link className="topnav-link nav-link" to='/register'>Register</Link> */}
+                        {/* temporary link adjustment */}
+                        <a href="http://localhost:5000/auth/Register">Register</a>
                     </li>
                 </ul>
             </div>

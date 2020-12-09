@@ -5,14 +5,12 @@ var Product = require("../models/product.model")
 
 //router.post('/', productController.createProduct);
 
-router.post('/:name/:description/:stock/:price', function(req, res) {
+router.post('/:name/:stock/:price', function(req, res) {
     name = req.params.name;
-    description = req.params.description;
     stock = req.params.stock;
     price = req.params.price;
     var newProduct = new Product({
         name: name,
-        description: description,
         stock: stock,
         price: price,
         

@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Login.scss";
 
-export default function Login() {
+export default function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,8 +20,16 @@ export default function Login() {
   return (
     <div className="Login">
       <h1 className="text-center">Login</h1>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
+        <form method="POST" action="http://localhost:5000/auth/login">
+          {/* <label>Enter username (email):</label>
+          <input type="text" name="username"/>
+          <label>Enter password:</label>
+          <input type="password" name="password"/> */}
+          <input type="submit" value="Click Here to Log In"></input>
+        </form>
+
+      {/* <Form onSubmit={handleSubmit}>
+        <Form.Group size="lg" controlId="username">
           <Form.Label>Email</Form.Label>
           <Form.Control
             autoFocus
@@ -41,7 +49,7 @@ export default function Login() {
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Login
         </Button>
-      </Form>
+      </Form> */}
     </div>
   );
 }

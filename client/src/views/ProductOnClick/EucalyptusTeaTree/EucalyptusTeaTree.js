@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
+import $ from 'jquery';
 import "./EucalyptusTeaTree.scss"
 import "../../../functions/ParallaxEffect"
 
 const EucalyptusTeaTree = (props) => {
+
     const [productToAdd, setProductToAdd] = useState([{
         name: props.productName,
         price: 18.99,
@@ -50,9 +52,9 @@ const EucalyptusTeaTree = (props) => {
             console.log(res);
             // fetchCart();
             // alert("Item Incremented");
-        } catch (err) {
+          } catch (err) {
             console.log(err);
-        }
+          }
     }
     const decreaseQty = () => {
         setCartSize(cartSize - 1)
@@ -60,7 +62,6 @@ const EucalyptusTeaTree = (props) => {
             setIsCartEmpty(true)
         }
     }
-
     return (
         <div className="eucalyptus">
             <head>
@@ -84,7 +85,6 @@ const EucalyptusTeaTree = (props) => {
                         <h2>$18.99</h2>
                         <p>A natural scent inspired by popular aromatherapy oil mixtures. Great for towels, bath robes, and
                             having a “me day.”</p>
-
                         <br />
                         This fragrance has hints of:
                         <ul>
@@ -104,6 +104,16 @@ const EucalyptusTeaTree = (props) => {
                         <button className="btn btn-light">
                             <a href="/products/#LPETT">Back</a>
                         </button>
+                    </div>
+                    <div className="col productInfo">
+                        <h1>
+                            This fragrance has hints of:
+                            <ul>
+                                <li>Tea Tree and Eucalyptus</li>
+                                <li>Natural Herbs</li>
+                                <li>Bergamot Orange</li>
+                            </ul>
+                        </h1>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,8 @@ router.post('/checkout', () => {
             throw err
         } else {
             console.log(order._id);
-            res.send("order creation success")
+            req.session.cart = null;
+            res.send("order creation success");
         }
       });
     });
