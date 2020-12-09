@@ -39,7 +39,7 @@ const EucalyptusTeaTree = (props) => {
         setCartSize(cartSize + 1)
 
         try {
-            const res = fetch("http://localhost:5000/:productId/:quantity", {
+            const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
                 method: "POST",
                 body: JSON.stringify({
                     productId: props.productID,
@@ -52,16 +52,35 @@ const EucalyptusTeaTree = (props) => {
             console.log(res);
             // fetchCart();
             // alert("Item Incremented");
-          } catch (err) {
+        } catch (err) {
             console.log(err);
-          }
+        }
     }
     const decreaseQty = () => {
         setCartSize(cartSize - 1)
-        if(cartSize === 0) {
+        if (cartSize === 1) {
             setIsCartEmpty(true)
         }
+        
+        try {
+          const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
+            method: "DELETE",
+            body: JSON.stringify({
+              productId: props.productID,
+              quantity: 1,
+            }),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8",
+            },
+          });
+          console.log(res);
+          // fetchCart();
+          // alert("Item Incremented");
+        } catch (err) {
+          console.log(err);
+        }
     }
+    
     return (
         <div className="eucalyptus">
             <head>
@@ -102,7 +121,7 @@ const EucalyptusTeaTree = (props) => {
                             </div>
                         }
                         <button className="btn btn-light">
-                            <a href="/products/#LPETT">Back</a>
+                            <a href="/products/#5fd002cb160ed44708479034">Back</a>
                         </button>
                     </div>
                     <div className="col productInfo">

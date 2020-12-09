@@ -24,7 +24,7 @@ const ProductOnScroll = () => (
                         make sure to change routing in App.js
                     */}
 
-                    <div className="section" id="LPFA">
+                    <div className="section" id="5fd002b3160ed44708479032">
                         {/* <FreshAir /> */}
                         <Product 
                             className="pattern freshAir"
@@ -33,7 +33,7 @@ const ProductOnScroll = () => (
                             />
                     </div>
 
-                    <div className="section" id="LPWG">
+                    <div className="section" id="5fd0029d160ed44708479030">
                         {/* <Gardenia /> */}
                         <Product 
                             className="pattern gardenia"
@@ -42,7 +42,7 @@ const ProductOnScroll = () => (
                         />
                     </div>
 
-                    <div className="section" id="LPETT">
+                    <div className="section" id="5fd002cb160ed44708479034">
                         {/* <Eucalyptus /> */}
                         <Product 
                             className="pattern eucalyptus"
@@ -51,7 +51,7 @@ const ProductOnScroll = () => (
                         />
                     </div>
 
-                    <div className="section" id="LPMT">
+                    <div className="section" id="5fd002a8160ed44708479031">
                         {/* <Mahogany /> */}
                         <Product 
                             className="pattern mahogany"
@@ -60,7 +60,7 @@ const ProductOnScroll = () => (
                         />
                     </div>
 
-                    <div className="section" id="LPCV">
+                    <div className="section" id="5fd002c2160ed44708479033">
                         {/* <Vanilla  /> */}
                         <Product 
                             className="pattern vanilla"
@@ -69,7 +69,7 @@ const ProductOnScroll = () => (
                         />
                     </div>
 
-                    <div className="section" id="LPWC">
+                    <div className="section" id="5fd0028d160ed4470847902f">
                         {/* <Watermelon  /> */}
                         <Product 
                             className="pattern watermelon"
@@ -82,6 +82,7 @@ const ProductOnScroll = () => (
                         <HomeFooter />
                     </div>
 
+                    
                 </ReactFullpage.Wrapper>
             );
         }}

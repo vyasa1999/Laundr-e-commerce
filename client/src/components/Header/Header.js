@@ -21,7 +21,7 @@ const Header = () => {
                         <Link className="topnav-link nav-link" to='/'>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="topnav-link nav-link" to='/About'>Our Story</Link>
+                        <Link className="topnav-link nav-link" to='/About'>About</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/Cart" className="topnav-link nav-link">Cart</Link>
@@ -37,12 +37,12 @@ const Header = () => {
                     <li className="nav-item">
                         {/* <Link className="topnav-link nav-link" to='/login'>Login</Link> */}
                         {/* temporary link adjustment */}
-                        <a href="http://localhost:5000/auth/login">Login</a>
+                        <a className="topnav-link nav-link" href="http://localhost:5000/auth/login">Login</a>
                     </li>
                     <li className="nav-item">
                         {/* <Link className="topnav-link nav-link" to='/register'>Register</Link> */}
                         {/* temporary link adjustment */}
-                        <a href="http://localhost:5000/auth/Register">Register</a>
+                        <a className="topnav-link nav-link" href="http://localhost:5000/auth/Register">Register</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@ const Header = () => {
             </button>
 
             <input id="clicker" type="checkbox" />
-            <label for="clicker">View Cart</label>
+            <label className="btn btn-info" for="clicker">View Cart</label>
 
             <div class="panel-wrap">
                 <div class="panel">

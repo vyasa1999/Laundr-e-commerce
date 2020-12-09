@@ -40,7 +40,7 @@ const FreshAir = (props) => {
         setCartSize(cartSize + 1)
 
         try {
-            const res = fetch("http://localhost:5000/:productId/:quantity", {
+            const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
                 method: "POST",
                 body: JSON.stringify({
                     productId: props.productID,
@@ -59,8 +59,26 @@ const FreshAir = (props) => {
     }
     const decreaseQty = () => {
         setCartSize(cartSize - 1)
-        if (cartSize === 0) {
+        if (cartSize === 1) {
             setIsCartEmpty(true)
+        }
+        
+        try {
+          const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
+            method: "DELETE",
+            body: JSON.stringify({
+              productId: props.productID,
+              quantity: 1,
+            }),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8",
+            },
+          });
+          console.log(res);
+          // fetchCart();
+          // alert("Item Incremented");
+        } catch (err) {
+          console.log(err);
         }
     }
 
@@ -104,10 +122,8 @@ const FreshAir = (props) => {
                                 <button onClick={increaseQty} className="btn btn-danger">+</button>
                             </div>
                         }
-                        <a className="btn btn-danger" href="/products/#LPFA">Back</a>
+                        <a className="btn btn-danger" href="/products/#5fd002b3160ed44708479032">Back</a>
                     </div>
-
-
                 </div>
             </div>
         </div>

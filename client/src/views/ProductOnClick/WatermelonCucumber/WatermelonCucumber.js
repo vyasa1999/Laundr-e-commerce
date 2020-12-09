@@ -38,7 +38,7 @@ const WatermelonCucumber = (props) => {
         setCartSize(cartSize + 1)
 
         try {
-            const res = fetch("http://localhost:5000/:productId/:quantity", {
+            const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
                 method: "POST",
                 body: JSON.stringify({
                     productId: props.productID,
@@ -57,11 +57,28 @@ const WatermelonCucumber = (props) => {
     }
     const decreaseQty = () => {
         setCartSize(cartSize - 1)
-        if (cartSize === 0) {
+        if (cartSize === 1) {
             setIsCartEmpty(true)
         }
+        
+        try {
+          const res = fetch("http://localhost:5000/api/cart/" + props.productID + "/" + "1", {
+            method: "DELETE",
+            body: JSON.stringify({
+              productId: props.productID,
+              quantity: 1,
+            }),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8",
+            },
+          });
+          console.log(res);
+          // fetchCart();
+          // alert("Item Incremented");
+        } catch (err) {
+          console.log(err);
+        }
     }
-
 
     return (
         <div className="watermelon">
@@ -104,7 +121,7 @@ const WatermelonCucumber = (props) => {
                             </div>
                         }
                         <button className="btn btn-light">
-                            <a href="/products/#LPWC">Back</a>
+                            <a href="/products/#5fd0028d160ed4470847902f">Back</a>
                         </button>
                     </div>
                 </div>
