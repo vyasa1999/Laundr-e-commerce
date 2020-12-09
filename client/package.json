@@ -6,6 +6,8 @@
     "@fullpage/react-fullpage": "^0.1.18",
     "@mdi/js": "^5.7.55",
     "@mdi/react": "^1.4.0",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "connected-react-router": "^6.8.0",

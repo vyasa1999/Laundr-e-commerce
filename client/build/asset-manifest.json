@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.71e29b30.chunk.css",
+    "main.js": "/static/js/main.6b7db8f4.chunk.js",
+    "main.js.map": "/static/js/main.6b7db8f4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e2a4b577.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e2a4b577.js.map",
+    "static/js/2.46013e54.chunk.js": "/static/js/2.46013e54.chunk.js",
+    "static/js/2.46013e54.chunk.js.map": "/static/js/2.46013e54.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.97686c5549e58ce37a2cd6a71096c683.js": "/precache-manifest.97686c5549e58ce37a2cd6a71096c683.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.71e29b30.chunk.css.map": "/static/css/main.71e29b30.chunk.css.map",
+    "static/media/CoffeeVanilla.scss": "/static/media/coffeeMockup.075c9932.png",
+    "static/media/EucalyptusTeaTree.scss": "/static/media/eucalyptusMockup.e20c872a.png",
+    "static/media/Product.scss": "/static/media/watermelon_pattern.7bf19617.png",
+    "static/media/Home.scss": "/static/media/ezgif.com-gif-maker.4bdc9b2a.gif",
+    "static/media/FreshAir.scss": "/static/media/freshairMockup.99c5add9.png",
+    "static/media/WhiteGardenia.scss": "/static/media/gardeniaMockup.2f5c2591.png",
+    "static/media/MahoganyTeakwood.scss": "/static/media/mahoganymockup.bbded255.png",
+    "static/media/WatermelonCucumber.scss": "/static/media/watermelonMockup.ac039e9a.png"
+  }
+}
