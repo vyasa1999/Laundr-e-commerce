@@ -4,7 +4,6 @@ import {Route, Switch, Redirect} from 'react-router-dom';
 
 // components
 import Header from "./components/Header/Header"
-import Products from "./components/Product/Product"
 
 // pages aka "views"
 import Home from "./views/Home/Home"

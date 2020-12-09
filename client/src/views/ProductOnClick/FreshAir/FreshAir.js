@@ -25,9 +25,6 @@ const FreshAir = (props) => {
                     productId: props.productID,
                     quantity: 1,
                 }),
-                headers: {
-                    "Content-type": "application/json; charset=UTF-8",
-                },
             });
             console.log(res);
             // fetchCart();
@@ -46,9 +43,6 @@ const FreshAir = (props) => {
                     productId: props.productID,
                     quantity: 1,
                 }),
-                headers: {
-                    "Content-type": "application/json; charset=UTF-8",
-                },
             });
             console.log(res);
             // fetchCart();
@@ -70,9 +64,6 @@ const FreshAir = (props) => {
               productId: props.productID,
               quantity: 1,
             }),
-            headers: {
-              "Content-type": "application/json; charset=UTF-8",
-            },
           });
           console.log(res);
           // fetchCart();
