@@ -115,3 +115,7 @@ heroku-postbuild script<br>
 See the section about
 [deployment](https://facebook.github.io/create-react-app/docs/deployment) for
 more information.
+
+## Deployment Difficulties:
+- Currently deployed on https://laundr-bombs.web.app/home, via Google Firebase Hosting. 
+- The desired intention was to deploy through Heroku at https://laundr-bombs.herokuapp.com/. Although we were able to correctly connect our Github repository to Heroku, in an attempt to deploy it by means of deploying the master branch from the Heroku interface, and to correctly create an optimized build for production. Because of these issues which we continue to investigate, we made the decision to have a tentative soft deployment of our client side via Firebase. 
